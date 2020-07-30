@@ -14,7 +14,11 @@ $(function(){
 		autoplay: {
             delay: 4000,
             disableOnInteraction: false,
-		},
-		
-    });
+		}
+	});
+	
+	$('.hamburger').on('click',function(){
+		$(this).toggleClass('active');
+		$(this).find('div').removeClass('no-ani')
+	})
 });

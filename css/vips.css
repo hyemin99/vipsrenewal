@@ -147,6 +147,7 @@ header{
 	background-color: #1d1917;
 	text-align: center;
 	height: 40px;
+	width: 100%;
 }
 .logo{
 	float: left;
@@ -157,8 +158,8 @@ header{
 	height: 100%;
 }
 .center-nav{
-	display: inline-block;
 	width: 70%;
+	margin: 0 auto;
 }
 .gnb-type{
 	width: 100%;
@@ -221,32 +222,32 @@ header{
 	line-height: 40px;
 	color: #fff;
 }
-.search{
-	float: right;
-	fill: #fff;
-	margin-top: 4px;
-	cursor: pointer;
-}
+
 /* 네비 메뉴 */
 .gnb-menu-container{
 	position: absolute;
 	top: 70px;
 	left: 0;
 	width: 100%;
-	background-color: rgba(0, 0, 0, 0.86);
+	background-color: rgba(0, 0, 0, 0.9);
 	display: none;
 }
+.gnb-menu-content{
+	width: 70%;
+	margin: 0 auto;
+}
 .gnb-menu{
-	width: 52%;
+	width: 70%;
 	margin: 0 auto;
 	overflow: hidden;
-	padding-left: 2.6%;
+	text-align: left;
 }
 .gnb-menu > li{
 	float: left;
 	width: 20%;
-	height: 170px;
-	padding: 30px 0;
+	margin: 40px 0;
+	height: 100px;
+	padding-left: 7%;
 }
 .gnb-menu-list > li{
 	margin-bottom: 16px;
@@ -261,10 +262,127 @@ header{
 .gnb-menu-list > li:hover > a{
 	color: #c2a279;
 }
-/* -------------------- */
+/* hamburger 햄버거 버튼 */
+.nav-ico{
+	float: right;
+	width: 40px;
+	height: 40px;
+	position: relative;
+}
+.hamburger{
+	width: 100%;
+	position: absolute;
+	width: 24px;
+	height: 20px;
+	top: 12px;
+	right: 0;
+	cursor: pointer;
+}
+.hamburger > div{
+    width: 100%;
+    height: 3px;
+	background: #999;
+	transition: background-color 0.5s ease;
+}
+.hamburger:hover > div{
+	background-color: #fff;
+}
+.line02{
+    margin: 5px 0;
+}
+.no-ani{
+    animation: none !important;
+}
+.hamburger .line01{
+    animation: line01-ani-rev 0.7s ease-in-out
+}
+.hamburger .line02{
+    animation: line02-ani-rev 0.7s ease-in-out
+}
+.hamburger .line03{
+    animation: line03-ani-rev 0.7s ease-in-out
+}
+.hamburger.active .line01{
+    animation: line01-ani 0.7s ease-in-out forwards
+}
+.hamburger.active .line02{
+    animation: line02-ani 0.7s ease-in-out forwards
+}
+.hamburger.active .line03{
+    animation: line03-ani 0.7s ease-in-out forwards
+}
+@keyframes line01-ani{
+    0% {
+		transform: translate3d(0, 0, 0) rotate(0deg);
+ 	}
+    50%{
+		transform: translate3d(0, 8px, 0) rotate(0);
+		background-color: #fff;
+    }
+    100%{
+        transform: translate3d(0, 8px, 0) rotate(45deg);
+    }
+} 
+@keyframes line02-ani{
+    0% {
+    	transform: scale(1);
+		opacity: 1;
+ 	}
+    100%{
+        transform: scale(0);
+        opacity: 0;
+    }
+} 
+@keyframes line03-ani{
+    0% {
+		transform: translate3d(0, 0, 0) rotate(0deg);
+  	}
+    50%{
+		transform: translate3d(0, -8px, 0) rotate(0);
+		background-color: #fff;
+    }
+    100%{
+        transform: translate3d(0, -8px, 0) rotate(135deg);
+    }
+} 
+@keyframes line01-ani-rev{
+    0% {
+    	transform: translate3d(0, 8px, 0) rotate(45deg);
+  	}
+    50%{
+		transform: translate3d(0, 8px, 0) rotate(0);
+		background-color: #fff;
+    }
+    100%{
+        transform: translate3d(0, 0, 0) rotate(0deg);
+    }
+} 
+@keyframes line02-ani-rev{
+    0% {
+		transform: scale(0);
+		opacity: 0;
+  	}
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+} 
+@keyframes line03-ani-rev{
+    0% {
+    	transform: translate3d(0, -8px, 0) rotate(135deg);
+ 	}
+    50%{
+		transform: translate3d(0, -8px, 0) rotate(0);
+		background-color: #fff;
+    }
+    100%{
+        transform: translate3d(0, 0, 0) rotate(0deg);
+    }
+} 
+/* --------------- */
 .header-space{
 	width: 100%;
-	height: 70px;
+	height: 69px;
 }
 /* -------------------- */
 #main-slide{
@@ -272,7 +390,7 @@ header{
 }
 #main-slide img{
 	width: 100%;
-	vertical-align: bottom;
+	vertical-align: middle;
 }
 .swiper-pagination {
 	position: absolute;
@@ -373,9 +491,10 @@ header{
 .to-go-page > span{
 	margin-left: 20px;
 	display: inline-block;
-	animation: fff-arrow 1s ease;
-	animation-iteration-count:infinite;
-	animation-direction:alternate;
+	animation: fff-arrow 1s ease infinite alternate;
+	-webkit-animation: fff-arrow 1s ease infinite alternate;
+	-moz-animation: fff-arrow 1s ease infinite alternate;
+	-o-animation: fff-arrow 1s ease infinite alternate;
 }
 @keyframes fff-arrow{
 	0%{
