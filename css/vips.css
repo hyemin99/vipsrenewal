@@ -267,6 +267,131 @@ header{
 	height: 70px;
 }
 /* -------------------- */
-#container img{
+#main-slide{
+	position: relative;
+}
+#main-slide img{
 	width: 100%;
+	vertical-align: bottom;
+}
+.swiper-pagination {
+	position: absolute;
+	bottom: 5% !important;
+	left: 50% !important;
+	transform: translateX(-50%) !important;
+	margin: 0;
+	width: 20% !important;
+}
+.swiper-pagination-bullet {
+	border-radius: 0;
+	width: 20%;
+	height: 3px;
+	text-align: center;
+	line-height: 30px;
+	font-size: 12px;
+	color:#000;
+	opacity: 1;
+	background: rgba(150, 150, 150, 0.5);
+	margin: 0 !important;
+}
+.swiper-pagination-bullet:hover{
+	background: #fff;
+	transition-duration: 0.5s;
+}
+.swiper-pagination-bullet-active {
+	color:#fff;
+	background: #fff;
+}
+.slide-button-next svg,
+.slide-button-prev svg{
+	fill: #fff;
+}
+.slide-button-next,
+.slide-button-prev {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 999;
+	width: 50px;
+	height: 50px;
+	border-radius: 100%;
+	text-align: center;
+}
+.slide-button-next:hover,
+.slide-button-prev:hover{
+	background-color: rgba(150, 150, 150, 0.5);
+	transition-duration: 0.5s;
+} 
+.slide-button-next{
+	right: 5%;
+}
+.slide-button-prev{
+	left: 5%;
+}
+/* banner 투고 메뉴 배너 */
+#banner{
+	background: url('../img/bannerbg.jpg') no-repeat center;
+	padding: 10px 0;
+}
+.banner-container{
+	width: 70%;
+	margin: 0 auto;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+}
+/* --- */
+.banner-tit{
+	float: left;
+	width: 26%;
+	font-size: 200%;
+}
+.banner-tit h2{
+	color: #fff;
+}
+.banner-tit h3{
+	color: #c2a279;
+	margin-top: 10px;
+}
+/* --- */
+.banner-txt{
+	float: left;
+	width: 44%;
+	color: #fff;
+	line-height: 1.6;
+	font-size: 1.2em;
+}
+.to-go-page{
+	display: block;
+	margin-top: 20px;
+	color: #999;
+	transition: 0.5s;
+}
+.to-go-page:hover{
+	color: #fff;
+}
+.to-go-page > span{
+	margin-left: 20px;
+	display: inline-block;
+	animation: fff-arrow 1s ease;
+	animation-iteration-count:infinite;
+	animation-direction:alternate;
+}
+@keyframes fff-arrow{
+	0%{
+		transform: translateX(0px);
+	}
+	100%{
+		transform: translateX(-7px);
+	}
+}
+/* --- */
+.banner-thumb{
+	float: right;
+	margin-left: 4%;
+	width: 26%;
+}
+.banner-thumb img{
+	width: 100%;
+	vertical-align: middle;
 }

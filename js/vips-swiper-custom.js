@@ -5,15 +5,16 @@ $(function(){
 		loop: true,
 		pagination: {
 			el: '.swiper-pagination',
-			type: 'progressbar',
+			clickable: true
 		},
 		navigation: {
-			nextEl: '.swiper-button-next',
-			prevEl: '.swiper-button-prev',
+			nextEl: '.slide-button-next',
+			prevEl: '.slide-button-prev',
 		},
 		autoplay: {
             delay: 4000,
             disableOnInteraction: false,
-        },
+		},
+		
     });
 });
