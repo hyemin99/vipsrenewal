@@ -16,9 +16,18 @@ $(function(){
             disableOnInteraction: false,
 		}
 	});
-	
-	$('.hamburger').on('click',function(){
-		$(this).toggleClass('active');
-		$(this).find('div').removeClass('no-ani')
-	})
+
+	var swiper = new Swiper('.best-menu-right', {
+		slidesPerView: 1,
+		spaceBetween: 30,
+		pagination: {
+		  el: '.best-menu-pagination',
+		  clickable: true,
+		},
+	  });
+
+
+
+
+
 });

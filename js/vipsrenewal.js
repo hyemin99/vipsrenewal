@@ -34,31 +34,9 @@ $(function(){
             }
         });
       });
-  
-    // $('.gnb-menu li:nth-child(1)').on('mouseenter', function(){
-    //     $('.gnb-type li:nth-child(1)').addClass('on');
-    // }).on('mouseleave', function(){
-    //     $('.gnb-type li:nth-child(1)').removeClass('on');
-    // });
-    // $('.gnb-menu li:nth-child(2)').on('mouseenter', function(){
-    //     $('.gnb-type li:nth-child(2)').addClass('on');
-    // }).on('mouseleave', function(){
-    //     $('.gnb-type li:nth-child(2)').removeClass('on');
-    // });
-    // $('.gnb-menu li:nth-child(3)').on('mouseenter', function(){
-    //     $('.gnb-type li:nth-child(3)').addClass('on');
-    // }).on('mouseleave', function(){
-    //     $('.gnb-type li:nth-child(3)').removeClass('on');
-    // });
-    // $('.gnb-menu li:nth-child(4)').on('mouseenter', function(){
-    //     $('.gnb-type li:nth-child(4)').addClass('on');
-    // }).on('mouseleave', function(){
-    //     $('.gnb-type li:nth-child(4)').removeClass('on');
-    // });
-    // $('.gnb-menu li:nth-child(5)').on('mouseenter', function(){
-    //     $('.gnb-type li:nth-child(5)').addClass('on');
-    // }).on('mouseleave', function(){
-    //     $('.gnb-type li:nth-child(5)').removeClass('on');
-    // });
-    
+	
+	$('.hamburger').on('click',function(){
+		$(this).toggleClass('active');
+		$(this).find('div').removeClass('no-ani')
+	});
 });
