@@ -388,3 +388,12 @@ header{
 	width: 100%;
 	height: 69px;
 }
+
+/* ---------------- */
+.kategorie-tit{
+	font-size: 50px;
+	font-weight: 400;
+}
+.kategorie-tit span{
+	font-weight: 800;
+}

@@ -24,6 +24,10 @@ $(function(){
 		pagination: {
 		  el: '.best-menu-pagination',
 		  clickable: true,
+		},
+		navigation: {
+			nextEl: '.best-menu-next',
+			prevEl: '.best-menu-prev',
 		}
 	  });
 

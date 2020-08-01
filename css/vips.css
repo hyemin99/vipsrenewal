@@ -163,7 +163,6 @@
 }
 .best-menu-img-list{
 	width: 100%;
-	border: solid 1px red;
 	height: 100%;
 	position: relative;
 }
@@ -220,17 +219,12 @@
 .best-menu-pagination .swiper-pagination-bullet-active{
 	background-color: #fff;
 }
-.best-menu-tit{
-	font-size: 50px;
-	font-weight: 400;
+.best-menu-right .kategorie-tit{
 	margin-left: 20%;
-}
-.best-menu-tit span{
-	font-weight: 800;
 }
 .best-menu-content{
 	width: 100%;
-	background-color: #332c2c;
+	background-color: #2c2c33;
 	padding: 10% 0  10% 20%;
 	margin-top: 50px;
 	color: #fff;
@@ -259,4 +253,29 @@
 .menu-price{
 	margin-top: 30px;
 	color: #aaa;
+}
+.best-menu-prev,
+.best-menu-next{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 999;
+	width: 100px;
+	height: 50px;
+	font-size: 50px;
+	cursor: pointer;
+	font-size: 800;
+	transition: 0.5s ease;
+	color: #999;
+	text-align: center;
+}
+.best-menu-prev:hover,
+.best-menu-next:hover{
+	color: #332c2c;
+}
+.best-menu-prev{
+	left: 5%;
+}
+.best-menu-next{
+	right: 5%;
 }
