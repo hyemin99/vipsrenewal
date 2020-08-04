@@ -342,7 +342,7 @@
 	width: 100%;
 	margin-top: -100px;
 	background-color: #2b2424;
-	padding: 10% 15% 4% 15%;
+	padding: 8% 15% 4% 15%;
 }
 .event-thumb{
 	float: left;
@@ -362,9 +362,10 @@
 }
 .event-content{
 	float: right;
-	width: 30%;
+	width: 40%;
 	color: #fff;
 	margin: 2% 0;
+	padding-left: 10%;
 }
 .event-txt{
 	margin: 40px 20px;
@@ -471,15 +472,17 @@
 	background: url("../img/brand-bg.jpg") no-repeat center;
 	background-attachment: fixed;
 }
-#brand .square{
-	width: 14px;
-	height: 14px;
+#brand::before{
+	content: "";
+	display: block;
+	width: 20px;
+	height: 20px;
 	background-color: #e5e5e5;
-	margin: 0 auto;
-	transform: rotate(45deg) translateY(-10px);
+	margin: -10px auto;
+	transform: rotate(135deg);
 }
 .mataphor-contain{
-	padding: 50px 0;
+	padding: 40px 0;
 }
 .brand-txt{
 	color: #fff;
@@ -493,7 +496,7 @@
 .metaphor{
 	width: 65%;
 	margin: 0 auto;
-	margin-top: 20px;
+	margin-top: 14px;
 	overflow: hidden;
 	text-align: center;
 }
@@ -671,4 +674,72 @@
 .metaphor-ico03:hover > div > p > span:nth-child(5){
 	transform: rotate(45deg) translateY(5px);
 	transition-delay:0.4s;
+}
+/* 베네핏 기프트 카드 */
+#benefits{
+	width: 100%;
+	background-color: #fff;
+}
+.benefits-container{
+	width: 70%;
+	margin: 50px auto;
+}
+.benefits-content{
+	overflow: hidden;
+	width: 100%;
+}
+.benefits-left{
+	float: left;
+	width: 25%;
+	margin-right: 10%;
+	position: relative;
+}
+/* 바닥 보더 박스 */
+.benefits-left::before{
+	content: "";
+	display: block;
+	position: absolute;
+	width: 280px;
+	height: 250px;
+	border: solid 5px #aaa;
+	top: 30px;
+	left: 30px;
+}
+/* 베네핏 흰색 콘텐츠 박스 */
+.benefits-box{
+	background-color: #fff;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 10%;
+}
+.benefits-box hgroup{
+	font-size: 2em;
+}
+.benefits-box h3{
+	color: #aaa;
+	margin-bottom: 5px;
+}
+.benefits-box > p{
+	line-height: 1.6;
+	font-size: 1.2em;
+	margin: 20px 0;
+}
+.benefits-box button{
+	width: 150px;
+	height: 30px;
+	background-color: #000;
+	border: 0;
+	color: #fff;
+	text-align: center;
+	line-height: 30px;
+	letter-spacing: 2px;
+	transition: 0.5s ease;
+}
+.benefits-box button:hover{
+	background-color: #8d847a;
+}
+.benefits-right{
+	float: right;
+	width: 65%;
 }
