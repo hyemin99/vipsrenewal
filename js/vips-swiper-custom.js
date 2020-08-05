@@ -28,7 +28,8 @@ $(function(){
 		navigation: {
 			nextEl: '.best-menu-next',
 			prevEl: '.best-menu-prev',
-		}
+		},
+		grabCursor: true
 	  });
 
 	swiper.on('slideChange', function () {
@@ -45,6 +46,18 @@ $(function(){
             $(this).removeClass('on');
         });
 		$('.best-menu-img-list li:nth-child('+(slideTextIndex+1)+')').addClass('on');
-    });
+	});
+	
+	var swiper = new Swiper('.gift-card', {
+		slidesPerView: 5,
+		spaceBetween: 30,
+		speed : 500,
+		loop: true,
+		autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+		},
+		grabCursor: true
+	  });
 
 });

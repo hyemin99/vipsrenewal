@@ -395,3 +395,56 @@ header{
 .kategorie-tit span{
 	font-weight: 800;
 }
+/* footer 푸터 */
+footer{
+	background-color: #1d1917;
+	margin-top: 80px;
+}
+.footer-top{
+	width: 100%;
+	border-bottom: solid 1px rgba(255, 255, 255, 0.3);
+}
+.footer-top ul{
+	width: 60%;
+	margin: 0 auto;
+	overflow: hidden;
+	text-align: center;
+}
+.footer-top ul li{
+	float: left;
+	width: 20%;
+	line-height: 40px;
+	color: rgba(255, 255, 255, 0.5);
+	transition: 0.5s ease;
+	cursor: pointer;
+}
+.footer-top ul li:hover{
+	color: #fff;
+}
+.footer-tit{
+	color: #fff;
+	font-size: 16px;
+}
+.footer-bottom{
+	width: 60%;
+	margin: 0 auto;
+	overflow: hidden;
+	color: rgba(255, 255, 255, 0.5);
+}
+.footer-bottom > ul{
+	float: left;
+	margin: 50px 0;
+	padding-left: 5%;
+}
+.footer-left{
+	width: 60%;
+}
+.footer-center{
+	width: 20%;
+}
+.footer-right img{
+	vertical-align: middle;
+}
+.footer-right{
+	width: 20%;
+}
