@@ -56,8 +56,7 @@ $(function(){
 		autoplay: {
             delay: 2500,
             disableOnInteraction: false,
-		},
-		grabCursor: true
+		}
 	  });
 
 });

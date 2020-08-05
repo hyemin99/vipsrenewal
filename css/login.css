@@ -1,0 +1,14 @@
+#container{
+    width: 100%;
+    background: -webkit-linear-gradient(top,#e5e5e5 50%,#fff 50%,#fff  100%); 
+    background: -moz-linear-gradient(top,#e5e5e5 50%,#fff 50%,#fff  100%); 
+    background:linear-gradient(top,#e5e5e5 50%,#fff 50%,#fff  100%); 
+    border-top: solid 1px transparent;
+    position: relative;
+}
+#login{
+    width: 45%;
+    margin: 150px auto;
+    background-color: #fff;
+    border: solid 1px #e5e5e5;
+}
