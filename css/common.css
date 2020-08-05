@@ -424,6 +424,8 @@ footer{
 .footer-tit{
 	color: #fff;
 	font-size: 16px;
+	display: inline-block;
+	margin-bottom: 10px;
 }
 .footer-bottom{
 	width: 60%;
@@ -431,10 +433,15 @@ footer{
 	overflow: hidden;
 	color: rgba(255, 255, 255, 0.5);
 }
+.footer-bottom address{
+	font-style: normal;
+	margin-top: 20px;
+}
 .footer-bottom > ul{
 	float: left;
 	margin: 50px 0;
 	padding-left: 5%;
+	line-height: 2;
 }
 .footer-left{
 	width: 60%;

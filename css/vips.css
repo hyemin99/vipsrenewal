@@ -804,9 +804,9 @@
 #news{
 	width: 100%;
 	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#524a41+64,000000+100&1+0,1+59,0+61 */
-	background: -moz-linear-gradient(top,  rgb(46, 46, 46) 0%, rgb(46, 46, 46) 59.9%, rgba(82,74,65,0) 60%, rgba(82,74,65,0) 64%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(top,  rgb(46, 46, 45) 0%,rgb(46, 46, 46) 59.9%,rgba(82,74,46,0) 60%,rgba(82,74,46,0) 64%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to bottom,  rgb(46, 46, 46) 0%,rgb(46, 46, 46) 59.9%,rgba(82,74,65,0) 60%,rgba(82,74,65,0) 64%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	background: -moz-linear-gradient(top,  rgb(46, 46, 46) 0%, rgb(46, 46, 46) 69.9%, rgba(82,74,65,0) 70%, rgba(82,74,65,0) 74%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgb(46, 46, 45) 0%,rgb(46, 46, 46) 69.9%,rgba(82,74,46,0) 70%,rgba(82,74,46,0) 74%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgb(46, 46, 46) 0%,rgb(46, 46, 46) 69.9%,rgba(82,74,65,0) 70%,rgba(82,74,65,0) 74%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#524a41', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
 	border-top: solid 1px #fff;
 }
@@ -909,7 +909,39 @@
 	background-color: rgba(0,0,0,0.7);
 	opacity: 0;
 	transition: 0.5s ease;
+	color: #fff;
+}
+.sns-hover-box > div{
+	position: absolute;
+	top: 50%; left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	width: 90%;
+	line-height: 30px;
+}
+.sns-hover-box h2{
+	transform: translateY(-10px);
+	opacity: 0;
+	transition: 0.5s ease;
+}
+.sns-hover-box p{
+	transform: translateY(10px);
+	opacity: 0;
+	transition: 0.5s ease;
+}
+.sns-hover-box svg{
+	fill: #fff;
+	vertical-align: middle;
+	margin-right: 10px;
 }
 .follow-list:hover .sns-hover-box{
+	opacity: 1;
+}
+.follow-list:hover .sns-hover-box h2{
+	transform: translateY(0);
+	opacity: 1;
+}
+.follow-list:hover .sns-hover-box p{
+	transform: translateY(0);
 	opacity: 1;
 }
