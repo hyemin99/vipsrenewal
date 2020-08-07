@@ -455,6 +455,7 @@ footer{
 }
 .footer-right img{
 	vertical-align: middle;
+	margin-right: 5px;
 }
 .footer-right{
 	width: 20%;
@@ -463,9 +464,13 @@ footer{
 /* 빵 부스러기 */
 .breadcrumb{
 	position: absolute;
-	top: 100px; right: 15%;
+	top: 50px; right: 15%;
 }
 .breadcrumb .home::after{
 	content: ">";
 	margin: 0 5px;
 }
+/* 
+hover-color: #8d847a 
+point-color: #c51230
+*/

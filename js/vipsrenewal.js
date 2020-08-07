@@ -8,7 +8,7 @@ $(function(){
             });
         });
     }).on('mouseleave', function(){
-        $('.gnb-menu-container:not(:animated)').slideUp(function(){
+        $('.gnb-menu-container').slideUp(function(){
             $('.nav-underline').css({
                 'display' : 'none'
             });

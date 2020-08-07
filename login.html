@@ -45,11 +45,11 @@
 										<a href="#"><small>Home P</small>시스템 정기점검 안내</a>
 										<span class="date">2020.05.05</span>
 									</li>	
-									<li class="hid">
+									<li class= "hid">
 										<a href="#"><small>Event</small>코코몽과 함께 하는 온도 나눔 이벤트</a>
 										<span class="date">2020.05.05</span>
 									</li>
-									<li class="hid">
+									<li class= "hid">
 										<a href="#"><small>Event</small>폭립 대축제 open 이벤트! 모두 참여 하시고 선물 받아가세요!</a>
 										<span class="date">2020.0505</span>
 									</li>
@@ -63,7 +63,7 @@
 					</div><!--left nav-->
 					<div class="right-nav">
 						<div class="login-join">
-							<a href="#">로그인</a>
+							<a href="login.html">로그인</a>|
 							<a href="#">회원가입</a>
 						</div>
 						<div class="nav-sns">
@@ -161,21 +161,21 @@
 	<div id="container" role="main">
         <div id="login"><!--사용자 정보 입력-->
             <div class="breadcrumb">
-                <a href="#" class="home">
+                <a href="index.html" class="home">
                     <svg viewBox="0 0 24 24" width="16" height="16">
 						<path d="M19 21H5a1 1 0 0 1-1-1v-9H1l10.327-9.388a1 1 0 0 1 1.346 0L23 11h-3v9a1 1 0 0 1-1 1zm-6-2h5V9.157l-6-5.454-6 5.454V19h5v-6h2v6z"/>
 					</svg>
                 </a>
-                <a href="#">로그인</a>
+                <a href="login.html">로그인</a>
             </div>
             <div class="login-container">
-                <span>LOGIN</span>
+                <span class="kategorie-tit">LOGIN</span>
                 <p>
                     빕스에 오신 것을 환영합니다<br><br>
                     로그인을 하시면 이벤트 참여 및 포인트, 쿠폰 조회가 가능합니다<br>
                     아래에 아이디와 비밀번호를 입력하신 후 로그인 해주세요
                 </p>
-                <div id="login-content">
+                <div class="login-content">
                     <form>
                         <fieldset>
                             <ul>
@@ -186,17 +186,17 @@
                                 </li>
                                 <li>
                                     <label for ="pw1">
-                                        <input type="password" id="pw1"  placeholder="비밀번호를 입력해주세요"  required >
+                                        <input type="password" id="pw"  placeholder="비밀번호를 입력해주세요"  required >
                                     </label>
                                 </li>
-                                <li><label for="save"><input type="checkbox" name="save"  id="save" value="save" > 아이디 저장</label></li>
-                                <li><button type="submit" value="submit">로그인</button></li>
+                                <li class="save-id"><label for="save"><input type="checkbox" name="save" id="save" value="save"> 아이디 저장</label></li>
+                                <li><button type="submit" value="submit" class="login-btn">로그인</button></li>
                             </ul>
                         </fieldset>
                     </form>
                 </div>
-                <div class="log06">
-                    <a href="#">아이디 찾기</a> │ <a href="#">비밀번호 찾기</a> │ <a href="terms01.html">회원가입</a>
+                <div class="sign-up">
+                    <span>아이디 찾기</span> │ <span>비밀번호 찾기</span> │ <a href="terms01.html">회원가입</a>
                 </div>
             </div>
         </div>

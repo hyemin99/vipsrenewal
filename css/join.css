@@ -1,0 +1,247 @@
+#join-top{
+    width: 100%;
+    position: relative;
+    border: solid 1px transparent;
+}
+.join-tit{
+    margin: 70px auto;
+    text-align: center;
+}
+.join-tit > p{
+    margin-top: 5px;
+    font-size: 1.1em;
+}
+.kategorie-tit{
+    text-align: center;
+}
+.kategorie-tit::after{
+    content: "";
+    display: block;
+    width: 100px;
+    border-bottom: solid 1px #000;
+    margin: 0 auto;
+    margin:  30px auto;
+}
+.join-tap{
+    margin: 30px auto;
+    overflow: hidden;
+    width: 30%;
+}
+.join-tap img{
+    width: 50%;
+}
+.join-tap li{
+    float: left;
+    width: 25%;
+    position: relative;
+}
+.join-tap li::before{
+    content: "";
+    display: block;
+    width: 20%;
+    height: 1px;
+    background-color: #aaa;
+    position: absolute;
+    top: 50%;
+    right: -10%;
+}
+.join-tap li:last-child::before{
+    content: "";
+    display: none;
+}
+.join-tap p{
+    margin-top: 5px;
+}
+.join-tap span{
+    color: #aaa;
+    font-size: 800;
+    margin-right: 5px;
+}
+/* ---join 상단 탭-- */
+#join-container{
+    width: 100%;
+    background: -webkit-linear-gradient(top,#e5e5e5 50%,#fff 50%,#fff  100%); 
+    background:linear-gradient(top,#e5e5e5 50%,#fff 50%,#fff  100%);
+    border-top: solid 1px transparent;
+}
+.join-content{
+    width: 55%;
+    background-color: #fff;
+    margin: 0 auto;
+}
+/* authentic 본인인증*/
+.authentic{
+    width: 100%;
+    margin: 50px auto;
+    border: solid 1px #e5e5e5;
+    padding: 4%;
+    display: none;
+}
+h2.join-name{
+    text-align: center;
+    font-size: 1.5em;
+}
+.authentic-option{
+    width: 80%;
+    overflow: hidden;
+    margin: 70px auto;
+}
+.authentic-option li{
+    float: left;
+    width: 33.333%;
+    text-align: center;
+    position: relative;
+}
+.authentic-option li::after{
+    content: "";
+    display: block;
+    width: 1px;
+    height: 50px;
+    position: absolute;
+    background-color: #ccc;
+    top: 50%; right: 0;
+    transform: translateY(-50%);
+}
+.authentic-option li:last-child::after{
+    display: none;
+}
+.authentic-option img{
+    width: 40%;
+}
+.authentic-option button{
+    display: block;
+    margin: 10px auto 0 auto;
+    border: 0;
+    width: 150px;
+    line-height: 30px;
+    background-color: #524a41;
+    color: #fff;
+}
+.notice{
+    width: 70%;
+    margin: 0 auto;
+    position: relative;
+    height: 100px;
+}
+.notice > ul{
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1.6;
+    color: #bbb;
+}
+.notice > ul > li:first-child{
+    margin-top: 10px;
+}
+.authentic-error{
+    width: 90%;
+    border-top: solid 1px #ccc;
+    margin: 30px auto;
+    padding-top: 60px;
+}
+.authentic-error > li{
+    margin-bottom: 40px;
+}
+.authentic-error > li:last-child{
+    margin-bottom: 0s;
+}
+.authentic-error svg{
+    margin-right: 5px;
+}
+.authentic-error b{
+    font-size: 1.1em;
+}
+.error-txt{
+    margin: 14px 0;
+    color: #666;
+}
+.error-btn{
+    background-color: #fff;
+    border: solid 1px #aaa;
+    color: #aaa;
+    padding: 3px 10px;
+}
+/* tos 이용약관 */
+.name-under{
+    position: relative;
+}
+.name-under::after{
+    content: "";
+    display: block;
+    width: 50px;
+    height: 1px;
+    background: #aaa;
+    margin: 20px auto;
+}
+.tos{
+    width: 100%;
+    background-color: #fff;
+    border: solid 1px #e5e5e5;
+    margin: 50px auto;
+    padding: 4%;
+}
+.all-check-wrap{
+    text-align: center;
+    margin: 20px auto;
+}
+.all-check-wrap input[type=checkbox]{
+    display: none;
+}
+.all-check-wrap input[type=checkbox] + label{ 
+    display: inline-block;
+    cursor: pointer; 
+    line-height: 30px; 
+    padding-left: 30px; 
+    background: url('../img/check_off.png') left/20px no-repeat; 
+    font-size: 1.5em;
+    font-weight: 800;
+}
+.all-check-wrap input[type=checkbox]:checked + label{ 
+    background-image: url('../img/check.png'); 
+}
+span.check-txt{
+    display: inline-block;
+    margin: 0 10px;
+}
+.tos-list{
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+.tos-list_tit{
+    font-size: 1.3em;
+    line-height: 30px;
+}
+.tos-list_tit strong{
+    font-size: 1.2em;
+    color: #c51230;
+    margin-right: 5px;
+}
+.tos-list_tit input{
+    vertical-align: middle;
+}
+.tos-list_txt{
+    margin-top: 10px;
+    border: solid 1px #ccc;
+    width: 100%;
+    height: 150px;
+    overflow: auto;
+    padding: 2%;
+    line-height: 1.6;
+}
+.tos-list_txt ul{
+    margin-top: 20px;
+}
+.tos-list_txt ul li{
+    margin-top: 10px;
+}
+button.tos-btn{
+    display: block;
+    margin: 0 auto;
+    background-color: #524a41;
+    color: #fff;
+    border: 0;
+    line-height: 30px;
+    width: 150px;
+    text-align: center;
+}
