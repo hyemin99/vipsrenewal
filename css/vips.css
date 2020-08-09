@@ -895,6 +895,7 @@
 	float: left;
 	width: 20%;
 	position: relative;
+	cursor: pointer;
 }
 .follow-list img{
 	width: 100%;
