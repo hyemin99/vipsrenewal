@@ -66,16 +66,24 @@
 }
 .join-content{
     width: 55%;
-    background-color: #fff;
     margin: 0 auto;
+}
+button{
+    padding: 0;
+}
+button > a{
+    color: #fff;
+    display: block;
+    width: 100%;
+    border: solid 1px #fff;
 }
 /* authentic 본인인증*/
 .authentic{
     width: 100%;
     margin: 50px auto;
     border: solid 1px #e5e5e5;
+    background-color: #fff;
     padding: 4%;
-    display: none;
 }
 h2.join-name{
     text-align: center;
@@ -161,6 +169,139 @@ h2.join-name{
     color: #aaa;
     padding: 3px 10px;
 }
+/* 모달 버튼 */
+.modal-container{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    display: none;
+}
+.modal-back{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.modal{
+    width: 28%;
+    height: 70%;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f5f5f5;
+    z-index: 999;
+    padding: 70px 10px;
+}
+.modal-close{
+    position: absolute;
+    top: 40px; right: 40px;
+    cursor: pointer;
+    text-align: center;
+}
+.modal-close > svg{
+    fill: #999;
+    transition: 0.5s ease;
+}
+.modal-close:hover > svg{
+    fill: #000;
+}
+.check-list{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 30px;
+    overflow: hidden;
+}
+.check-list > li{
+    float: left;
+    width: 50%;
+    margin-bottom: 5px;
+}
+.check-list input{
+    vertical-align: middle;
+}
+.view-txt{
+   float: right;
+   margin-right: 20px;
+   color: #999;
+}
+.aut-form{
+    width: 80%;
+    margin: 30px auto;
+}
+.aut-form li{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    overflow: hidden;
+}
+.aut-form li:last-child{
+    margin-bottom: 0;
+}
+.aut-form li > div:first-child{
+    float: left;
+    width: 35%;
+}
+.aut-form li > div:last-child{
+    float: right;
+    width: 60%;
+}
+.aut-form select{
+    width: 100%;
+    height: 38px;
+    line-height: 36px;
+    padding-left: 10px;
+    border: 0;
+}
+.label-pad{
+    padding-left: 20px;
+}
+.aut-form input{
+    width: 100%;
+    height: 38px;
+    line-height: 36px;
+    padding-left: 10px;
+}
+/* 성별 선택 */
+.form-half input{
+    width: 15px;
+    height: 15px;
+    line-height: 38px;
+    vertical-align: middle;
+}
+.form-half label{
+    margin-right: 10px;
+}
+.form-tel input{
+    width: 70%;
+}
+.form-tel button{
+    width: 30%;
+    height: 38px;
+    line-height: 36px;
+    vertical-align: top;
+}
+.modal button{
+    border: 0;
+    background-color: #524a41;
+    color: #fff;
+    transition: 0.5s ease;
+}
+.modal button:hover{
+    background-color: #8d847a;
+}
+.aut-btn{
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+}
+/* 셀렉 글 위치 */
 /* tos 이용약관 */
 .name-under{
     position: relative;
@@ -244,4 +385,85 @@ button.tos-btn{
     line-height: 30px;
     width: 150px;
     text-align: center;
+}
+
+/* info 사용자 정보 입력 */
+.info{
+    width: 80%;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 4% 15%;
+    border: solid 1px #e5e5e5;
+}
+.info-txt{
+    text-align: center;
+    margin: 20px 0;
+}
+.info-content fieldset{
+	border: 0;
+}
+.info-content .pointred{
+	list-style-type: disc;
+	color: #c51230;
+}
+.info-content ul li{
+	line-height: 35px;
+	margin: 15px 0;
+}
+.info-content .info-notice{
+	color: #808080;
+	margin: 10px 0;
+	margin-left: 30%;
+	line-height: 1.6;
+}
+.info-content fieldset label{
+	color: #524a41;
+	float: left;
+	line-height: 35px;
+	width: 30%;
+	font-weight: 700;
+}
+.info-content fieldset input{
+	vertical-align: middle;
+	line-height: 33px;
+	width: 70%;
+	padding: 0 5px;
+	outline: 0;
+}
+.info-content input#user-id02{
+	width: 120px;
+	margin-left: 30%;
+	height: 35px;
+	background: #524a41;
+	border: 0;
+	color: #fff;
+	cursor: pointer;
+}
+.info-content #email{
+	width: 30%;
+	line-height: 33px;
+	height: 35px;
+	vertical-align: middle;
+	outline: 0;
+}
+.info-content div.lastbut{
+	width: 100%;
+	text-align: center;
+}
+.info-content div.lastbut button{
+	outline: 0;
+	background: #524a41;
+	border: 0;
+	color: #fff;
+	cursor: pointer;
+	width: 30%;
+	line-height: 35px;
+	margin-top: 20px;
+}
+/* complete 가입완료 */
+.complete{
+    width: 100%;
+    border: solid 1px #e5e5e5;
+    background-color: #fff;
+
 }

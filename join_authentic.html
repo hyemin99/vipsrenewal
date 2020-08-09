@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
 	<meta charset="utf-8">
-	<title>join</title>
+	<title>join_authentic</title>
 	<meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1, user-scalable=yes,initial-scale=1.0" />
 
 	<link rel="stylesheet" type="text/css" href="./css/reset.css">
@@ -174,20 +174,28 @@
                 <p>빕스 회원 가입을 위한 동의 및 본인 인증 단계입니다</p>
                 <ul class="join-tap">
                     <li>
-						<img src="./img/join01.png" alt="회원가입 이미지입니다"/>
-						<p><span>01.</span>본인확인</p>
+						<a href="join_authentic.html">
+							<img src="./img/join01_2.png" alt="회원가입 이미지입니다"/>
+							<p><span>01.</span>본인확인</p>
+						</a>
 					</li>
                     <li>
-						<img src="./img/join02.png" alt="회원가입 이미지입니다"/>
-						<p><span>02.</span>약관동의</p>
+						<a href="join_tos.html">
+							<img src="./img/join02.png" alt="회원가입 이미지입니다"/>
+							<p><span>02.</span>약관동의</p>
+						</a>
 					</li>
                     <li>
-						<img src="./img/join03.png" alt="회원가입 이미지입니다"/>
-						<p><span>03.</span>정보입력</p>
+						<a href="join_info.html">
+							<img src="./img/join03.png" alt="회원가입 이미지입니다"/>
+							<p><span>03.</span>정보입력</p>
+						</a>
 					</li>
                     <li>
-						<img src="./img/join04.png" alt="회원가입 이미지입니다"/>
-						<p><span>04.</span>가입완료</p>
+						<a href="join_complete.html">
+							<img src="./img/join04.png" alt="회원가입 이미지입니다"/>
+							<p><span>04.</span>가입완료</p>
+						</a>
 					</li>
                 </ul>
             </div>
@@ -199,17 +207,100 @@
 					<ul class="authentic-option">
 						<li>
 							<img src="./img/authentic01.png" alt="인증 아이콘 입니다"/>
-							<button type="button">휴대전화 인증</button>
+							<button type="button" class="modal-btn">휴대전화 인증</button>
 						</li>
 						<li>
 							<img src="./img/authentic02.png" alt="인증 아이콘 입니다"/>
-							<button type="button">공인인증서 인증</button>
+							<button type="button" class="modal-btn">공인인증서 인증</button>
 						</li>
 						<li>
 							<img src="./img/authentic03.png" alt="인증 아이콘 입니다"/>
-							<button type="button">체크/신용카드 인증</button>
+							<button type="button" class="modal-btn">체크/신용카드 인증</button>
 						</li>
 					</ul>
+					<div class="modal-container">
+						<div class="modal-back"></div>
+						<div class="modal">
+							<h2 class="join-name name-under">빕스 본인 휴대전화 인증</h2>
+							<div class="modal-close">
+								<svg viewBox="0 0 24 24" width="24" height="24">
+									<path d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636z"/>
+								</svg>
+							</div>
+							<div class="all-check-wrap">
+								<input type="checkbox" class="check-all li-check" id="check-all"><label for="check-all">
+									<span class="check-txt">아래 약관에 모두 동의합니다</span></label>
+							</div>
+							<ul class="check-list">
+								<li>
+									<input type="checkbox" id="check01" class="li-check"><label for="check01">인증시 개인정보 이용</label>
+									<span class="view-txt">보기</span>
+								</li>
+								<li>
+									<input type="checkbox" id="check02" class="li-check"><label for="check02">인증시 고유식별정보 처리</label>
+									<span class="view-txt">보기</span>
+								</li>
+								<li>
+									<input type="checkbox" id="check03" class="li-check"><label for="check03">통신사 이용약관</label>
+									<span class="view-txt">보기</span>
+								</li>
+								<li>
+									<input type="checkbox" id="check04" class="li-check"><label for="check04">인증사 이용약관</label>
+									<span class="view-txt">보기</span>
+								</li>
+								<li>
+									<input type="checkbox" id="check05" class="li-check"><label for="check05">빕스 개인정보 수집</label>
+									<span class="view-txt">보기</span>
+								</li>
+							</ul>
+							<form class="aut-form">
+								<ul>
+									<li>
+										<div><label for="uname" class="label-pad">이름</label></div>
+										<div><input type="text" id="uname" autofocus></div>
+									</li>
+									<li>
+										<div class="aut-select">
+											<label for="people">
+												<select id="people">
+													<option value="내국인">내국인</option>
+													<option value="외국인">외국인</option>
+												</select>
+											</label>
+										</div>
+										<div class="form-half">
+											<input type="radio" id="men" name="gerder" checked />
+											<label for="men">남자</label>
+											<input type="radio" id="women" name="gerder"/>
+											<label for="women">여자</label>
+										</div>
+									</li>
+									<li>
+										<div><label for="birthday" class="label-pad">생일</label></div>
+										<div><input type="date" id="birthday"></div>
+									</li>
+									<li>
+										<div class="aut-select">
+											<label for="agency">
+												<select id="agency">
+													<option value="skt">SKT</option>
+													<option value="kt">KT</option>
+													<option value="lg">LG</option>
+												</select>
+											</label>
+										</div>
+										<div class="form-tel">
+											<label for="tel-num"><input type="tel" id="tel-num" value="전화번호"></label><button type="button">인증</button>
+										</div>
+									</li>
+									<li>
+										<label for="uid"><input class="text" id="uid" placeholder="인증번호 입력" maxlength="8"></label>
+									</li>
+								</ul>
+							</form>
+							<button type="submit" class="aut-btn"><a href="join_tos.html">인증 확인</a></button>
+						</div><!-- modal 모달 하얀 창 -->
+					</div><!-- modal container 모달 컨테이너 -->
 					<ul class="authentic-error">
 						<li>
 							<div class="error-tit">
@@ -232,150 +323,6 @@
 						</li>
 					</ul>
 				</div><!--authentic 본인인증 -->
-				<div class="tos">
-					<h2 class="join-name name-under">서비스 이용약관</h2>
-					<div class="all-check-wrap">
-						<input type="checkbox" class="check-all li-check" id="check-all"><label for="check-all">전체동의</label>
-						<span class="check-txt">(*선택동의 사항이 포함되어 있습니다)</span>
-					</div>
-					<div class="tos-list">
-						<div class="tos-list_tit">
-							<strong>[필수]</strong><label for="check01">빕스 회원가입 서비스 이용약관 동의</label><input type="checkbox" class="li-check" id="check01">
-						</div>
-						<div class="tos-list_txt">
-							<h3>빕스 회원이용약관</h3>
-							<ul><b>제 1조 (목적)</b>
-								<li>
-									본 약관은 CJ  ONE 회원이 주식회사 에스피씨클라우드(이하 "당사")에서 제공하는 CJ  ONE포인트카드 서비스를 이용함에 있어 
-									CJ  ONE포인트카드 회원과 당사의 제반 권리의무 및 관련 절차 등을 규정하는 데 그 목적이 있습니다. 
-								</li>
-							</ul>
-							<ul><b>제 2조 (운영)</b>
-								<li>
-									CJ  ONE카드는 당사에서 운영하며, CJ  ONE 카드 서비스는 본 약관에 동의하고 당사의 승인을 얻은 회원, 제휴가맹점에 적용됩니다.
-								</li>
-							</ul>
-							<ul><b>제3조 (용어의 정의)</b>
-								<li>
-									① "CJ  ONE 회원"(이하 "회원")이라 함은 당사의 약관을 승인하고 정해진 가입 절차를 통하여 가입하여 당사로부터 회원 자격을 부여 받아 정상적으로 CJ  ONE 서비스를 이용할 수 있는 고객을 말합니다. 
-								</li>
-								<li>
-									② "CJ  ONE 서비스"(이하 "카드 서비스")라 함은 회원을 위해 당사가 제공하는 서비스로 포인트 적립 및 사용 서비스를 말합니다.
-								</li>
-								<li>
-									③ "CJ  ONE카드"(이하 "카드")라 함은 회원이 카드 서비스를 정상적으로 이용할 수 있도록 당사 또는 당사와 제휴 계약을 체결한 업체가 발급한 카드로 종류는 다음과 같습니다.
-								</li>
-								<li>
-									1. 일반 마일리지 카드 : 단순한 포인트 적립 및 사용만 가능한 카드로, 전 연령대 회원 대상의 “기본카드”와 만 19세 이상의 회원 중 
-									1~12세 자녀를 둔 회원 대상의 “키즈카드”로 구분함
-								</li>
-								<li>
-									2. CJ  ONE 모바일 카드(이하 “모바일 카드”) : 당사 또는 당사와 서비스 계약을 체결한 제휴사에서 제공하는 스마트폰 애플리케이션을 통하여 발급받거나 등록한 카드로, 기본카드의 기능을 포함함
-								</li>
-								<li>
-									3. CJ  ONE 제휴카드(이하 "제휴카드") : CJ  ONE카드의 기본적인 마일리지 서비스와 신용카드 또는 체크카드, 선불카드 등의 기능이 결합된 제휴 업체 발급 카드를 의미함.
-								</li>
-								<li>
-									④ “적립 포인트”라 함은 당사의 브랜드, 제휴사, 제휴가맹점에서 제품 및 서비스를 구입할 경우 당사 및 제휴사가 고지한 적립률에 따라 부여되는 포인트를 의미합니다.
-								</li>
-								<li>
-									⑤ "가용 포인트", "잔여 포인트"라 함은 회원이 적법하게 부여 받은 해피포인트 중 이미 사용한 인트를 제외한 나머지 CJ  ONE포인트의 합계를 의미합니다.
-								</li>
-								<li>
-									⑥ "제휴가맹점"은 온/오프라인 상의 당사 또는 SPC그룹 계열사 브랜드의 직영점 또는 가맹점 및 당사와 제휴 계약을 체결하고 CJ  ONE 포인트를 공동으로 운영하거나 회원 대상의 서비스를 제공하기로 합의한 업체 또는 점포 전체를 의미합니다. 단, 당사 또는 SPC그룹 계열사 브랜드의 직영점 또는 가맹점 중 휴게소, 지하철 역사, 기타 사업장에 입점한 형태의 일부 업체 또는 점포의 경우, 제휴가맹점에서 제외되어 해피포인트 적립 또는 사용이 불가능할 수 있습니다. 제휴가맹점의 추가, 변경 시 당사는 제4조에 따른 방법에 따라 사전에 고지합니다.
-								</li>
-							</ul>
-						</div>
-					</div><!-- list -->
-					<div class="tos-list">
-						<div class="tos-list_tit">
-							<strong>[필수]</strong><label for="check02">개인정보 수집 및 이용동의</label><input type="checkbox" class="li-check" id="check02">
-						</div>
-						<div class="tos-list_txt">
-							<ul><b>1. 수집하는 개인정보의 항목</b>
-								<li>
-									회사는 다양한 서비스 제공을 위하여, 적법한 수단을 통하여 아래와 같은 회원 정보를 수집하고 있습니다. 만 14세 미만 아동은 법정대리인(부모 등)의 동의를 받아야 회원 가입이 가능하며, 회사는 법정대리인의 동의를 얻기 위하여 법정대리인의 성명, 이메일 등 필요한 최소한의 정보를 요구할 수 있습니다. 이때, 수집된 법정대리인의 개인정보는 법정대리인의 동의여부를 확인하는 목적 외의 용도로 이를 이용하거나 제3자에게 제공되지 않습니다.
-								</li>
-							</ul>
-							<ul><b>(1)필수항목</b>
-								<li>
-									홈페이지, 해피포인트카드번호, 이름, 아이디, CI, 생년월일 및 성별(주민번호 앞 7자리), 비밀번호, 이동통신사, 휴대전화번호, 주소, 이메일,이메일/SMS/App Push/DM/TM정보수신 동의여부
-								</li>
-								<li>* 아이핀으로 회원가입시 아이핀 제공정보(본인확인 기관이 제공한 정보)<br>
-									* 만 14세미만 회원 발급시 보호자 정보(보호자 성명, 보호자 이메일, 보호자 휴대폰번호)<br>
-									* 키즈카드 : 키즈이름, 키즈생일(생년월일, 음양력), 키즈성별, 키즈개인정보 수집동의
-								</li>
-							</ul>
-							<ul><b>모바일 어플리케이션)</b>
-								<li>
-									해피포인트카드번호, 이름, 아이디, CI, 생년월일 및 성별(주민번호 앞 7자리), 비밀번호, 이동통신사, 휴대전화번호, 이메일/SMS/App Push/DM/TM정보수신 동의여부
-								</li>
-							</ul>
-							<ul><b>(2)고충처리</b>
-								<li>
-									전화상담 녹취 파일 내 개인정보
-								</li>
-							</ul>
-							<ul><b>(3)서비스 이용 또는 사업처리 과정에서 생성/수집되는 정보</b>
-								<li>
-									서비스 이용기록(이용시간/이용매장/포인트/상품 또는 서비스 구매내역) 및 결제기록, 홈페이지/모바일 어플리케이션 접속일시, 접속IP, 쿠키(cookie), 디바이스 종류, OS종류 및 버전, 블루투스 맥어드레스, PUSH용 토큰
-								</li>
-							</ul>
-						</div>
-					</div><!-- list -->
-					<div class="tos-list">
-						<div class="tos-list_tit">
-							<strong>[선택]</strong><label for="check03">위치기반 서비스 이용약관 동의</label><input type="checkbox" class="li-check" id="check03">
-						</div>
-						<div class="tos-list_txt">
-							<ul><b>제 1 조 (목적)</b>
-								<li>
-									본 약관은 회원(에스피씨클라우드 서비스 약관에 동의한 자를 말합니다. 이하 “회원”이라고 합니다.)이 주식회사 에스피씨클라우드(이하 “회사”라고 합니다.)이 제공하는 인근 마케팅 지역에서 정보(쿠폰등) 받기 서비스(이하 “서비스”라고 합니다)를 이용함에 있어 회사와 회원의 권리·의무 및 책임사항을 규정함을 목적으로 합니다.
-								</li>
-							</ul>
-							<ul><b>제 2 조 (이용약관의 효력 및 변경)</b>
-								<li>
-									①본 약관은 서비스를 신청한 고객 또는 개인위치정보주체가 본 약관에 동의하고 회사가 정한 소정의 절차에 따라 서비스의 이용자로 등록함으로써 효력이 발생합니다.
-								</li>
-								<li>
-									②회원이 온라인에서 본 약관의 "동의하기" 버튼을 클릭하였을 경우 본 약관의 내용을 모두 읽고 이를 충분히 이해하였으며, 그 적용에 동의한 것으로 봅니다.
-								</li>
-								<li>
-									③회사는 위치정보의 보호 및 이용 등에 관한 법률, 콘텐츠산업 진흥법, 전자상거래 등에서의 소비자보호에 관한 법률, 소비자기본법 약관의 규제에 관한 법률 등 관련법령을 위배하지 않는 범위에서 본 약관을 개정할 수 있습니다.
-								</li>
-								<li>
-									④회사가 약관을 개정할 경우에는 기존약관과 개정약관 및 개정약관의 적용일자와 개정사유를 명시하여 현행약관과 함께 그 적용일자 10일 전부터 적용일 이후 상당한 기간 동안 공지만을 하고, 개정 내용이 회원에게 불리한 경우에는 그 적용일자 30일 전부터 적용일 이후 상당한 기간 동안 각각 이를 서비스 홈페이지에 게시하거나 회원에게 전자적 형태(전자우편, SMS 등)로 약관 개정 사실을 발송하여 고지합니다.
-								</li>
-								<li>
-									⑤회사가 전항에 따라 회원에게 통지하면서 공지 또는 공지?고지일로부터 개정약관 시행일 7일 후까지 거부의사를 표시하지 아니하면 이용약관에 승인한 것으로 봅니다. 회원이 개정약관에 동의하지 않을 경우 회원은 이용계약을 해지할 수 있습니다.
-								</li>
-							</ul>
-						</div>
-					</div><!-- list -->
-					<div class="tos-list">
-						<div class="tos-list_tit">
-							<strong>[선택]</strong><label for="check04">마케팅 활용 및 광고성정보 수신 동의</label><input type="checkbox" class="li-check" id="check04">
-						</div>
-						<div class="tos-list_txt">
-							<ul><b>제 1 조 (목적)</b>
-								<li>
-									회사는 귀하의 정보들을 활용하여, 앱푸시, 문자메시지, 이메일, 영수증 쿠폰 등 다양한 채널을 통해 귀하에게 꼭 필요한 회사 혹은 제휴사의 상품, 서비스를 추천하거나 맞춤형 광고(쿠폰, 이벤트 등)을 제공에 대한 알림을 합니다.
-								</li>
-								<li>
-									또한 수집하는 개인정보는 마케팅, 프로모션, 이벤트, 행사관련 정보 안내 및 제반 마케팅활동, 맞춤형 서비스 제공, 맞춤형 쿠폰 제공, 당사 및 제휴사 상품/서비스 안내 및 권유 등을 위해 사용하며, 회사는 해당 업무를 수행하기 위하여 수탁사를 활용할 수 있고, 이에 대해서는 개인정보 처리방침을 통해 확인 가능합니다.
-								</li>
-								<li>
-									선택 사항에 동의하지 않으셔도 서비스 가입 및 이용이 가능하나, 동의하지 않을 경우 제공 가능한 관련 편의 사항 등(맞춤형 쿠폰 기타 각종 혜택 등)이 제한될 수 있습니다.
-								</li>
-							</ul>
-						</div>
-					</div><!-- list -->
-					<div class="all-check-wrap">
-						<span class="check-txt">(위 모든 항목에 동의 합니다)</span><input type="checkbox" class="check-all li-check" id="check-all"><label for="check-all">전체동의</label>
-					</div>
-					<button type="button" class="tos-btn">진행하기</button>
-				</div><!-- tos 이용약관 -->
-
 			</div>
 			<div class="notice">
 				<ul>이용안내
