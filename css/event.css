@@ -1,3 +1,5 @@
-.snb{
-    width: 100%;
+/* event 전체 랩 */
+#event{
+    width: 70%;
+    margin: 0 auto;
 }
