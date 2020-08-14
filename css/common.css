@@ -399,6 +399,10 @@ header{
 .kategorie-tit span{
 	font-weight: 800;
 }
+.kategorie-tit small{
+	font-size: 18px;
+	padding-left: 20px;
+}
 /* footer 푸터 */
 footer{
 	background-color: #1d1917;
@@ -489,7 +493,6 @@ footer{
 	height: 40px;
 }
 .snb-nav{
-	width: 24%;
 	margin: 0 auto;
 	line-height: 39px;
 	overflow: hidden;
@@ -497,7 +500,6 @@ footer{
 }
 .snb-nav > li{
 	float: left;
-	width: 50%;
 	position: relative;
 }
 .snb-nav > li > a{
@@ -599,7 +601,6 @@ point-color: #c51230
 	background-color: #c51230;
 	color: #fff;
 }
-
 /* --- */
 .details-fnb{
     width: 80%;
@@ -648,8 +649,8 @@ point-color: #c51230
 .details-list table{
     width: 100%;
     margin-top: 20px;
-    border-top: solid 3px #bbb;
-    border-bottom: solid 3px #bbb;
+    border-top: solid 2px #aaa;
+    border-bottom: solid 2px #aaa;
 	line-height: 40px;
 	text-align: center;
 }
@@ -670,7 +671,7 @@ point-color: #c51230
 	color: #c51230;
 }
 .details-list tbody tr:first-child{
-	border-top: solid 1px #bbb;
+	border-top: solid 1px #aaa;
 }
 .details-list th,
 .details-list td{
