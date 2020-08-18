@@ -129,22 +129,6 @@ h2.join-name{
 .authentic-option button:hover{
     background-color: #8d847a;
 }
-.notice{
-    width: 70%;
-    margin: 0 auto;
-    position: relative;
-    height: 100px;
-}
-.notice > ul{
-    position: absolute;
-    top: 50%; left: 50%;
-    transform: translate(-50%, -50%);
-    line-height: 1.6;
-    color: #bbb;
-}
-.notice > ul > li:first-child{
-    margin-top: 10px;
-}
 .authentic-error{
     width: 90%;
     border-top: solid 1px #ccc;

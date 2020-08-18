@@ -1,0 +1,142 @@
+.snb-nav{
+	width: 24%;
+}
+.snb-nav > li{
+	width: 50%;
+}
+.notice{
+    margin-top: 50px;
+}
+/* ---- */
+#store{
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    border: solid 1px transparent;
+}
+p.pic{
+	width:25%;
+	margin:0 auto;
+	text-align:center;
+	margin-top:70px;
+}
+p.pic img{
+	width:100%;
+}
+div.meu04{
+	width:70%;
+	margin:0 auto;
+	overflow:hidden;
+	margin-top:50px;
+}
+div.meu05 img{
+	width:100%;
+}
+div.meu05{
+	width:48%;
+	float:left;
+	margin-right:4%;
+	font-size:1.1em;
+	line-height:1.6;
+}
+div.meu05 p{
+	margin-top:20px;
+	font-size:1.4em;
+	color:#524a41;
+}
+div.meu05 p strong{
+	font-size:1.6em;
+}
+div.meu05 hr{
+	margin:5px 0 20px 0;
+}
+div.meu07{
+	margin-right:0;
+}
+div.meu08{
+	margin-top:70px;
+}
+
+.tomahawk-img{
+    display: block;
+    width: 90%;
+    margin: 150px auto 0 auto;
+}
+
+/*상품정보*/
+
+.tomahawk-table{
+    width: 55%;
+    margin: 80px auto;
+    line-height: 1.5;
+}
+div.me_01 p{
+	border:solid 1px #e5e5e5;
+	width:99%;
+	margin:0 auto;
+	margin-top:10px;
+	padding:1.5%;
+}
+/*제품소개*/
+div.me_02{
+	margin-top:20px;
+}
+div.me_02 table{
+	width:99%;
+	margin:0 auto;
+	margin-top:10px;
+	border:solid 1px #e5e5e5;
+}
+div.me_02 th, div.me_02 td{
+	padding:0.75%;
+}
+div.me_02 th{
+	background:#a8a4a0;
+	color:#fff;
+	border-bottom:solid 1px #e5e5e5;
+}
+div.me_02 tr:last-child th{
+	border-bottom:0;
+}
+div.me_02 td{
+	padding-left:1.5%;
+	border-bottom:solid 1px #e5e5e5;
+}
+div.me_02 tr:last-child td{
+	border:0;
+}
+div.me_02 span{
+	color:#a8a4a0;
+}
+/*1회 제공량 함량*/
+div.me_03{
+	margin-top:20px;
+}
+div.me_03 table{
+	margin:0 auto;
+	margin-top:10px;
+	width:99%;
+}
+div.me_03 th, div.me_03 td{
+	padding:0.75%;
+	text-align:center;
+}
+div.me_03 th{
+	background:#a8a4a0;
+	border-right:solid 1px #e5e5e5;
+	color:#fff;
+}
+div.me_03 td{
+	border:solid 1px #e5e5e5;
+	border-top:0;
+	border-left:0;
+}
+div.me_03 td.bor_ri{
+	border-right:0;
+}
+div.me_03 td.notice{
+	border:0;
+	text-align:left;
+	padding-left:1.5%;
+	color:#a8a4a0;
+}

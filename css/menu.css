@@ -1,0 +1,233 @@
+.snb-nav{
+	width: 40%;
+}
+.snb-nav > li{
+	width: 25%;
+}
+.notice{
+    margin-top: 50px;
+}
+/* ---- */
+#menu{
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    border: solid 1px transparent;
+    background: -webkit-linear-gradient(top,#fff 200px, #e5e5e5 200px, #e5e5e5 700px,#fff 700px,#fff  100%); 
+    background: -moz-linear-gradient(top,#fff 200px, #e5e5e5 200px, #e5e5e5 700px,#fff 700px,#fff  100%); 
+    background:linear-gradient(top,#fff 200px, #e5e5e5 200px, #e5e5e5 700px,#fff 700px,#fff  100%); 
+}
+.breadcrumb{ 
+    right: 23%;
+}
+/* menu-cotainer 메뉴 컨테이너 */
+.menu-kategorie{
+    overflow: hidden;
+    width: 600px;
+}
+.menu-kategorie li{
+    float: left;
+    width: 14.285%;
+    height: 30px;
+    line-height: 30px;
+    border: solid 1px #ccc;
+    border-right: 0;
+    color: #666;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.menu-kategorie li:last-child{
+    border-right: solid 1px #ccc;
+}
+.menu-kategorie li.on{
+    background: #666;
+    color: #fff;
+}
+.menu-kategorie li:hover{
+    background: #999;
+    color: #fff;
+}
+.menu-cotainer{
+    width: 54%;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+.menu-cotent{
+    width: 100%;
+    border: solid 1px #e5e5e5;
+    background: #fff;
+    padding: 5% 3%;
+}
+.menu-list{
+    width: 100%;
+    overflow: hidden;
+}
+.menu-list li{
+    float: left;
+    width: 32%;
+    margin-right: 2%;
+    border: solid 1px #e5e5e5;
+}
+.menu-list li:nth-child(3n){
+    margin-right: 0;
+}
+.menu-list li:nth-child(n +4){
+    margin-top: 20px;
+}
+.menu-img img{
+    width: 100%;
+}
+.menu-txt{
+    padding: 5%;
+    overflow: hidden;
+}
+.menu-txt > p{
+    float: left;
+    width: 80%;
+}
+.menu-txt span{
+    color: #999;
+    display: block;
+    margin-top: 6px;
+}
+.menu-txt b{
+    color: #c51230;
+}
+.view-menu{
+    display: block;
+    float: right;
+    width: 20%;
+    text-align: center;
+    font-size: 2em;
+}
+.view-menu svg{
+    fill: #666;
+    transition: 0.5s ease;
+}
+.view-menu:hover svg{
+    fill: #c51230;
+}
+.more-menu{
+    display: block;
+    margin: 50px auto 0 auto;
+    width: 200px;
+	line-height: 34px;
+	text-align: center;
+	font-size: 12px;
+	letter-spacing: 2px;
+	transition: 0.5s ease-in-out;
+	border: solid 1px #8d847a;
+    color: #8d847a;
+    background: 0;
+}
+.more-menu:hover{
+    background-color: #8d847a;
+	color: #fff;
+}
+
+/*와인 표 시작*/
+.meu07 h1{
+    padding-left: 5%;
+}
+.meu08 h1{
+    padding-left: 2%;
+}
+div.meu07{
+	margin:0 auto;
+	margin-top:50px;
+	width:100%;
+	overflow:hidden;
+	font-size:1.1em;
+	line-height:1.4;
+}
+div.sparkling{
+	float:left;
+	width:45%;
+}
+div.white{
+	float:right;
+	width:45%;
+}
+div.topborder{
+	border-top:solid 1px #a8a4a0;
+	border-bottom:solid 1px #e5e5e5;
+	padding:2% 5%;
+	position:relative;
+}
+div.underborder{
+	border-bottom:solid 1px #a8a4a0;
+	padding:2% 5%;
+	position:relative;
+}
+p.price{
+	position:absolute;
+	top:35%;
+	right:0;
+	color:#c51230;
+	font-weight:bold;
+}
+/*레드 와인 줄*/
+div.meu08{
+	width:100%;
+	margin:0 auto;
+	margin-top:20px;
+	font-size:1.1em;
+	line-height:1.4;
+}
+div.meu08 div.topborder{
+	overflow:hidden;
+	padding:0;
+}
+div.meu08 div.topborder div{
+	float:left;
+	width:45%;
+	position:relative;
+	padding:1% 2%;
+}
+div.meu08 div.topborder div:last-child{
+	float:right;
+}
+div.meu08 div.underborder{
+	overflow:hidden;
+	padding:0;
+}
+div.meu08 div.underborder div{
+	float:left;
+	width:45%;
+	position:relative;
+	padding:1% 2%;
+}
+div.meu08 div.underborder div:last-child{
+	float:right;
+}
+
+
+/*와인의 맛 감지*/
+div.meu09{
+	width:100%;
+	margin:0 auto;
+	margin-top:50px;
+	font-size:1.1em;
+	line-height:1.5;
+}
+div.meu09 h2{
+	background:#524a41;
+	color:#fff;
+	padding:1.5% 3%;
+}
+div.meu09 div{
+	border-bottom:solid 1px #e5e5e5;
+	padding:2% 3%;
+}
+div.meu09 div:last-child{
+	overflow:hidden;
+	border-bottom:solid 1px #a8a4a0;
+}
+div.meu09 div:last-child p{
+	float:left;
+	font-weight:bold;
+}
+div.meu09 div p.text01{
+	margin-left:100px;
+	font-weight:normal;
+}

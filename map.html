@@ -27,8 +27,27 @@
 			100%{
 				width: 60%;
 			}
-		}
+        }
+        .details-list{
+            margin-top: 80px;
+        }
 	</style>
+	<script>
+		$(function(){
+			$(".open-map01").on("click", function(){
+				$("#map01").toggle(500);
+				return false;
+			});
+			$(".open-map02").on("click", function(){
+				$("#map02").toggle(500);
+				return false;
+			});
+			$(".open-map03").on("click", function(){
+				$("#map03").toggle(500);
+				return false;
+			});
+		});
+	</script>
 </head>
 <body>
 <div id="wrap">
@@ -207,101 +226,185 @@
                             <li><b>mail</b>help_master@cj.net</li>
                         </ul>
                     </div>
-                    <a class="map-btn" href="https://map.naver.com/v5/entry/place/12138484?c=14136182.4961492,4518050.9874795,15,0,0,0,dh">
-                        <img src="./img/naver.png"> 지도 보기
-                    </a>
-                    <a class="map-btn" href="https://www.google.com/maps/place/CJ%ED%91%B8%EB%93%9C%EB%B9%8C/@37.5642053,126.9894801,17z/data=!3m1!4b1!4m5!3m4!1s0x357ca1b3bc05245d:0x47399e8206e5b669!8m2!3d37.5642011!4d126.9916688?hl=ko">
-                        <img src="./img/google.png"> 지도 보기
-                    </a>
+                    <div class="map-btn">
+                        <a href="https://map.naver.com/v5/entry/place/12138484?c=14136182.4961492,4518050.9874795,15,0,0,0,dh">
+                            <img src="./img/naver.png"> 지도 보기
+                        </a>
+                        <a href="https://www.google.com/maps/place/CJ%ED%91%B8%EB%93%9C%EB%B9%8C/@37.5642053,126.9894801,17z/data=!3m1!4b1!4m5!3m4!1s0x357ca1b3bc05245d:0x47399e8206e5b669!8m2!3d37.5642011!4d126.9916688?hl=ko">
+                            <img src="./img/google.png"> 지도 보기
+                        </a>
+                    </div>
                 </div>
                 <div class="map-right">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.611951753585!2d126.98948011564809!3d37.56420533201876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca1b3bc05245d%3A0x47399e8206e5b669!2zQ0rtkbjrk5zruYw!5e0!3m2!1sko!2skr!4v1581063211165!5m2!1sko!2skr" width="100%" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
                     <ul class="way-option">
-                       <li></li>
-                       <li></li>
-                       <li></li>
+                       <li>
+                            <div class="way-ico">
+                                <svg viewBox="0 0 24 24" width="24" height="24">
+                                    <path d="M7.617 8.712l3.205-2.328A1.995 1.995 0 0 1 12.065 6a2.616 2.616 0 0 1 2.427 1.82c.186.583.356.977.51 1.182A4.992 4.992 0 0 0 19 11v2a6.986 6.986 0 0 1-5.402-2.547l-.697 3.955 2.061 1.73 2.223 6.108-1.88.684-2.04-5.604-3.39-2.845a2 2 0 0 1-.713-1.904l.509-2.885-.677.492-2.127 2.928-1.618-1.176L7.6 8.7l.017.012zM13.5 5.5a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-2.972 13.181l-3.214 3.83-1.532-1.285 2.976-3.546.746-2.18 1.791 1.5-.767 1.681z" fill="rgba(255,255,255,1)"/>
+                                </svg>
+                            </div>
+                            <div class="way-txt">
+                                <b>도보 이용시</b>
+                                <p>종합 버스터미널에서 약 230m 직진, 좌회전하여 낭만연구소로 직진</p>
+                            </div>
+                       </li>
+                       <li>
+                            <div class="way-ico">
+                                <svg viewBox="0 0 24 24" width="24" height="24">
+                                    <path d="M19 20H5v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-9l2.513-6.702A2 2 0 0 1 6.386 4h11.228a2 2 0 0 1 1.873 1.298L22 12v9a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1v-1zM4.136 12h15.728l-2.25-6H6.386l-2.25 6zM6.5 17a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm11 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" fill="rgba(255,255,255,1)"/>
+                                </svg>
+                            </div>
+                            <div class="way-txt">
+                                <b>자차 이용시</b>
+                                <p>종합버스터미널 정류장 하차 후 도보(약 10분), 택시(약 3분)등 이용</p>
+                            </div>
+                        </li>
+                       <li>
+                            <div class="way-ico">
+                                <svg viewBox="0 0 24 24" width="24" height="24">
+                                    <path d="M17 20H7v1a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-1H3v-8H2V8h1V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v3h1v4h-1v8h-1v1a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1v-1zM5 5v9h14V5H5zm0 11v2h4v-2H5zm10 0v2h4v-2h-4z" fill="rgba(255,255,255,1)"/>
+                                </svg>
+                            </div>
+                            <div class="way-txt">
+                                <b>대중교통 이용시</b>
+                                <p>bs네거리에서 파머스마켓 방향 → 지산교 방향으로 250m 직진
+                                </p>
+                            </div>
+                       </li>
                     </ul>
                 </div>
             </div>
             <div class="details-list">
                 <table cellspacing= "0" class="event-table">
+                    <caption class="map-tit">LIST FOR STORE</caption>
                     <colgroup>
                         <col width="10%"/>
-                        
-                        <col width="*"/>
-                        
-                        <col width="10%"/>
-                        
+                        <col width="30%"/>
+                        <col width="50%"/>
                         <col width="10%"/>
                     </colgroup>
                     <thead>
                         <tr>
-                            <th>유형</th>
-                            <th>제목</th>
-                            <th>조회</th>
-                            <th class="bornone">날짜</th>
+                            <th>지역</th>
+                            <th>지점명</th>
+                            <th>주소</th>
+                            <th class="bornone">전화번호</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr class="imp-list">
-                            <td><span class="important-col badge">중요</span></td>
-                            <td class="text-lf"><a href="news-details.html"><strong>CJ푸드빌 개인정보처리 안내</strong></a></td>
-                            <td>20</td>
-                            <td>20-10-20</td>
-                        </tr>
-                        <tr class="imp-list">
-                            <td><span class="important-col badge">중요</span></td>
-                            <td class="text-lf"><a href="news-details.html"><strong>09월 22일 등촌점 리뉴얼 오픈</strong></td>
-                            <td>15</td>
-                            <td>20-10-15</td>
-                        </tr>
-                        <tr class="imp-list">
-                            <td><span class="important-col badge">중요</span></td>
-                            <td class="text-lf"><a href="news-details.html"><strong>시스템 정기점검 안내</strong></a></td>
-                            <td>23</td>
-                            <td>20-10-15</td>
+                        <tr>
+                            <td>서울</td>
+                            <td class="text-lf">빕슬 제일제당 센터점</td>
+                            <td class="text-lf">
+								<a href="#" class="open-map01 map-a">
+									서울 특별시 중구 쌍림동 292
+									<svg viewBox="0 0 24 24" width="18" height="18" class="map-ico">
+										<path d="M18 3v2h-1v6l2 3v2h-6v7h-2v-7H5v-2l2-3V5H6V3z"/>
+									</svg>
+								</a>
+							</td>
+                            <td>02-6740-7997</td>
+						</tr>
+						<tr>
+							<td colspan="4" class="map-td" id="map01">
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.622951362165!2d127.00108911564801!3d37.56394623203346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca31926609e6d%3A0x74687ec82f56077f!2z67mV7IqkIOygnOydvOygnOuLueyEvO2EsOygkA!5e0!3m2!1sko!2skr!4v1581076447179!5m2!1sko!2skr" width="100%" height="200" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+								<ul>
+									<li><span>영업 시간</span>AM 11: 00~ PM 10:00</li>
+									<li><span>홈페이지</span>ivips.co.kr</li>
+									<li><span>편의시설</span>키즈존 설치</li>
+								</ul>
+							</td>
+						</tr> 
+                        <tr>
+                            <td>서울</td>
+                            <td class="text-lf">빕스 명동중앙점</td>
+                            <td class="text-lf">
+								<a href="#" class="open-map02 map-a">
+									서울 특별시 중구 명동 명동길 53 중앙점 3층
+									<svg viewBox="0 0 24 24" width="18" height="18" class="map-ico">
+										<path d="M18 3v2h-1v6l2 3v2h-6v7h-2v-7H5v-2l2-3V5H6V3z"/>
+									</svg>
+								</a>
+							</td>
+                            <td>02-779-7871</td>
+						</tr>
+						<tr>
+							<td colspan="4" class="map-td" id="map02">
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d201921.1518690987!2d126.92566602718514!3d37.74272199007455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca2efe733f91d%3A0x9495cc9e5b83ca62!2z67mV7IqkIOuqheuPmeykkeyVmeygkA!5e0!3m2!1sko!2skr!4v1581311693757!5m2!1sko!2skr" width="100%" height="200" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+								<ul>
+									<li><span>영업 시간</span>AM 11: 30~ PM 11:30</li>
+									<li><span>홈페이지</span>ivips.co.kr</li>
+									<li><span>접근성</span>휠체어 이용가능 입구</li>
+								</ul>
+							</td>
+						</tr> 
+                        <tr>
+                            <td>서울</td>
+                            <td class="text-lf">빕스 도곡역점</td>
+                            <td class="text-lf">
+								<a href="#" class="open-map03 map-a">
+									서울 특별시 강남구 대치동 500
+									<svg viewBox="0 0 24 24" width="18" height="18" class="map-ico">
+										<path d="M18 3v2h-1v6l2 3v2h-6v7h-2v-7H5v-2l2-3V5H6V3z"/>
+									</svg>
+								</a>
+							</td>
+                            <td>02-569-1997</td>
+						</tr>
+						<tr>
+							<td colspan="4" class="map-td" id="map03">
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.7356522537384!2d127.05378941564646!3d37.49056403623247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca6a735683d4b%3A0x150fc69c57594599!2z67mV7IqkIOuPhOqzoeyXreygkA!5e0!3m2!1sko!2skr!4v1581311673103!5m2!1sko!2skr" width="100%" height="200" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+								<ul>
+									<li><span>영업 시간</span>AM 11: 30~ PM 10:00</li>
+									<li><span>홈페이지</span>ivips.co.kr</li>
+									<li><span>접근성</span>휠체어 이용가능 엘리베이터</li>
+									<li class="over-list"><span></span>휠체어 이용가능 입구</li>
+									<li class="over-list"><span></span>휠체어 이용가능 화장실</li>
+								</ul>
+							</td>
+						</tr> 
+                        <tr>
+                            <td>경기도</td>
+                            <td class="text-lf">빕스 의정부 이마트점</td>
+                            <td class="text-lf">경기도 의정부시 민락동 475-35</td>
+                            <td>031-851-5997</td>
                         </tr>
                         <tr>
-                            <td><span class="nomar-col badge">일반</span></td>
-                            <td class="text-lf"><a href="news-details.html">브레이크 타임 운영 안내</a></td>
-                            <td>85</td>
-                            <td>20-10-10</td>
+                            <td>경기도</td>
+                            <td class="text-lf">경기 판교점</td>
+                            <td class="text-lf">경기 성남시 분당구 삼평동 740</td>
+                            <td>031-8016-5997</td>
                         </tr>
                         <tr>
-                            <td><span class="nomar-col badge">일반</span></td>
-                            <td class="text-lf"><a href="news-details.html">운영시간 조정 안내</a></td>
-                            <td>31</td>
-                            <td>20-10-01</td>
+                            <td>부산광역시</td>
+                            <td class="text-lf">빕스 부산서면점</td>
+                            <td class="text-lf">부산광역시 부산 진구 부전 2동 중앙대로 654</td>
+                            <td>051-817-1997</td>
                         </tr>
                         <tr>
-                            <td><span class="nomar-col badge">일반</span></td>
-                            <td class="text-lf"><a href="news-details.html">영업종료 매장 안내</a></td>
-                            <td>07</td>
-                            <td>20-10-01</td>
+                            <td>부산광역시</td>
+                            <td class="text-lf">빕스 부산 해운대점</td>
+                            <td class="text-lf">부산광역시 부산 해운대로 1400</td>
+                            <td>051-817-2006</td>
                         </tr>
                         <tr>
-                            <td><span class="nomar-col badge">일반</span></td>
-                            <td class="text-lf"><a href="news-details.html">CJ푸드빌 개인정보 처리방침 개정 고지</a></td>
-                            <td>10</td>
-                            <td>20-09-20</td>
+                            <td>광주광역시</td>
+                            <td class="text-lf">빕스 광주 충장로점</td>
+                            <td class="text-lf">광주광역시 동구 불로동 178</td>
+                            <td>062-224-1997</td>
                         </tr>
                         <tr>
-                            <td><span class="nomar-col badge">일반</span></td>
-                            <td class="text-lf"><a href="news-details.html">현대 자동차 블루멤버스 포인트 사용 및 적립 일시 중단 안내</a></td>
-                            <td>27</td>
-                            <td>20-09-15</td>
+                            <td>충북청주시</td>
+                            <td class="text-lf">빕스 현대백화점 충청점</td>
+                            <td class="text-lf">충북청주시 흥덕구 북대동 3380</td>
+                            <td>062-2246-1527</td>
                         </tr>
                         <tr>
-                            <td><span class="nomar-col badge">일반</span></td>
-                            <td class="text-lf"><a href="news-details.html">시스템 정기 점검 안내</a></td>
-                            <td>39</td>
-                            <td>20-09-15</td>
-                        </tr>
-                        <tr>
-                            <td><span class="nomar-col badge">일반</span></td>
-                            <td class="text-lf"><a href="news-details.html">NH 농협 채움 Plus등급 카드 현장할인 혜택 변경 안내</a></td>
-                            <td>11</td>
-                            <td>20-09-10</td>
+                            <td>충남대전시</td>
+                            <td class="text-lf">빕스 대전중앙점</td>
+                            <td class="text-lf">충남대전시 호국로 156-40</td>
+                            <td>043-234-1997</td>
                         </tr>
                     </tbody>
                 </table>

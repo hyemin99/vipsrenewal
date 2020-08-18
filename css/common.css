@@ -656,7 +656,7 @@ point-color: #c51230
 }
 .details-list .text-lf{
 	text-align: left;
-	padding-left: 50px;
+	text-indent: 50px;
 }
 .details-list tbody tr{
 	border-top: solid 1px #ddd;
@@ -680,4 +680,22 @@ point-color: #c51230
 .details-list tr > th:last-child,
 .details-list tr > td:last-child{
 	border: 0;
+}
+
+/* 푸터 위 안내문 */
+.notice{
+    width: 70%;
+    margin: 0 auto;
+    position: relative;
+    height: 100px;
+}
+.notice > ul{
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1.6;
+    color: #bbb;
+}
+.notice > ul > li:first-child{
+    margin-top: 10px;
 }
