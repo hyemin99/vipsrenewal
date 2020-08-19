@@ -140,3 +140,450 @@ div.me_03 td.notice{
 	padding-left:1.5%;
 	color:#a8a4a0;
 }
+
+
+
+
+
+/* delivery 딜리버리 */
+.delivery{
+    margin-top: 80px;
+}
+div#menu00{
+	position:relative;
+	padding-top:30px;	
+	background:#fff;
+}
+div.joi01{
+	position:absolute;
+	right:10%;
+	overflow:hidden;
+}
+div.joi01 p{
+	float:left;
+}
+div.joi01 p:nth-child(1){
+	width:15px;
+	margin-right:5px;
+}
+div.joi01 p img{
+	width:100%;
+}
+/*상단 주문 전체**********************/
+div.men00{
+	width:55%;
+	margin:0 auto;
+	margin-top:50px;
+	overflow:hidden;
+}
+/*왼쪽 이미지 박스*****/
+div.me_deli01{
+	width:33%;
+	float:left;
+}
+div.deliimg01 img{
+	width:100%;
+}
+div.deliimg02{
+	overflow:hidden;
+	width:100%;
+	margin-top:2%;
+}
+div.deliimg02 p{
+	float:left;
+	width:15%;
+	margin-right:2%;
+}
+div.deliimg02 p img{
+	width:100%;
+}
+/*오른쪽 주문 박스*****/
+/*폼 영역*/
+div.me_deli02{
+	width:60%;
+	float:right;
+	overflow:hidden;
+	border-top:solid 1px #a8a4a0;
+	border-bottom:solid 1px #a8a4a0;
+}
+div.delitext01{
+	float:left;
+	width:80%;
+}
+div.delitext01> div.hgroup{
+	padding:7% 5%;
+}
+div.delitext01 h3{
+	margin-top:5px;
+}
+div.delitext01 fieldset{
+	padding:7% 5%;
+	border:0;
+	border-top:solid 1px #e5e5e5;
+	font-size:1.1em;
+}
+div.delitext01 fieldset li{
+	margin-bottom:20px;
+}
+div.delitext01 fieldset li:last-child{
+	margin-bottom:0;
+}
+div.delitext01 fieldset li label{
+	float:left;
+	width:30%;
+}
+div.delitext01 fieldset li input{
+	padding-left:5px;
+	line-height:20px;
+	vertical-align:middle;
+}
+div.delitext01 fieldset li> p.price{
+	margin-left:30%;
+	margin-top:5px;
+	color:#a8a4a0;
+}
+div.delitext01 fieldset li> p.total{
+	font-size:1.2em;
+	font-weight:bold;
+}
+div.delitext01 fieldset li> p.total span{
+	color:#c51230;
+}
+div.delitext01 fieldset input{
+	outline:0;
+}
+/*버튼 모음*/
+div.delibut{
+	width:60%;
+	float:right;
+	text-align:center;
+	margin-top:5px;
+}
+div.delibut button{
+	display:inline-block;
+	width:32.666%;
+	margin-right:1%;
+	border:0;
+	cursor:pointer;
+	outline:0;
+	padding:2% 0;
+}
+div.delibut button:first-child{
+	background:#524a41;
+	color:#fff;
+}
+div.delibut button:first-child:hover{
+	background:rgba(0, 0, 0, 0.6);
+}
+div.delibut button:nth-child(2):hover{
+	background:rgba(0, 0, 0, 0.3);
+	color:#fff;
+}
+div.delibut button:last-child{
+	margin-right:0;
+	color:#999;
+}
+div.delibut button:last-child:hover{
+	background:rgba(0, 0, 0, 0.3);
+	color:#fff;
+}
+/*베스트 로고*/
+div.delitext02{
+	float:left;
+	width:20%;
+	background:#f6f4f3;
+	text-align:center;
+	height:400px;
+	line-height:1.5;
+}
+div.delitext02> img{
+	width:70%;
+	margin-top:20%;
+}
+div.delitext02> div.codegroup{
+	margin-top:40%;
+}
+
+div.delitext02>div.codegroup> hr{
+	margin:10px auto;
+	width:30%;
+}
+
+div.delitext02>div.codegroup> div> p{
+	font-weight:bold;
+	color:#000;
+}
+div.delitext02>div.codegroup> div> span.star{
+	color:#c51230;
+}
+/*해피 투게더************************/
+#demo{
+	border:solid 3px #e5e5e5;
+	width:55%;
+	margin: 50px auto;
+	padding: 20px;
+	padding-bottom: 0;
+}
+#demo h3{
+	font-size: 1.3em;
+	margin: 30px 50px;
+}
+#examples{
+	background-color: transparent;
+	padding: 0;
+}
+#content-1{
+	width: 90%;
+	margin: 0 auto;
+	background-color: transparent;
+	overflow: hidden;
+	padding: 0;
+}
+#content-1 img{
+	width: 100%;
+	height: auto;
+}
+#content-1 li{
+	text-align: center;
+	width: 150px;
+	margin-right: 30px;
+}
+.together span{
+	display: block;
+	margin-top: 5px;
+	color: #999;
+}
+.together b{
+	color: #c51230;
+}
+/*딜리버리 전체*********************/
+div#deli01{
+	width:60%;
+	margin:0 auto;
+	margin-top:100px;
+}
+div.meu02{
+	width:60%;
+	overflow:hidden;
+}
+div.meu02 div{
+	float:left;
+	border:solid 1px #e5e5e5;
+	border-right:0;
+	width:14.285%;
+	text-align:center;
+}
+div.meu02 div:nth-child(4){
+	border-right:solid 1px #e5e5e5;
+}
+div.meu02 div a{
+	display:block;
+	padding:8.5% 0%;
+}
+div.meu02 div:nth-child(1){
+	background:#808080;
+}
+div.meu02 div:nth-child(1) a{
+	color:#fff;
+}
+div.meu02 div:nth-child(1) a:hover{
+	background:rgba(0, 0, 0, 0.4);
+}
+div.meu02 div a:hover{
+	background:#808080;
+	color:#fff;
+}
+/*사진 조정*/
+div.bimg1{
+	width:70%;
+	margin:0 auto;
+	margin-top:20px;
+}
+div.bimg1 img{
+	width:100%;
+}
+/*더보기*/
+div.bimg1 div.viewmore{
+	width:200px;
+	border:solid 1px #a8a4a0;
+	text-align:center;
+	margin:0 auto;
+}
+ div.bimg1 div.viewmore a{
+	color:#a8a4a0;
+	display:block;
+	padding:5%;
+	font-size:1.1em;
+}
+div.bimg1 div.viewmore a:hover{
+	color:#fff;
+	background:#a8a4a0;
+}
+/*후기작성***************************/
+div#deli03{
+	width:50%;
+	margin:0 auto;
+	padding-top:100px;
+	font-size:1.1em;
+}
+div#deli03 p strong{
+	font-size:2.25em;
+}
+div#deli03 table{
+	width:100%;
+	margin-top:10px;
+}
+div#deli03 td.answer{
+	font-weight:bold;
+	color:#c51230;
+	padding-left:5%;
+}
+div#deli03 td.texleft{
+	padding-left:5%;
+}
+div#deli03 table td{
+	border-top:solid 1px #e5e5e5;
+	padding:1% 0;
+}
+div#deli03 table tr.lasttr td{
+	border-bottom:solid 1px #e5e5e5;
+}
+div#deli03 img{
+	width:15px;
+}
+div#deli03 tr td:last-child{
+	text-align:right;
+	padding-right:5%;
+	color:#a8a4a0;
+}
+div#deli03 tr:hover{
+	background:#f6f4f3;
+}
+/*큐앤에이****************************/
+div#deli02{
+	width:50%;
+	margin:0 auto;
+	padding-top:90px;
+	font-size:1.1em;
+}
+div#deli02 p strong{
+	font-size:2.25em;
+}
+div#deli02 table{
+	width:100%;
+	margin-top:10px;
+}
+div#deli02 td.answer{
+	font-weight:bold;
+	color:#c51230;
+	padding-left:5%;
+}
+div#deli02 td.texleft{
+	padding-left:5%;
+}
+div#deli02 table td{
+	border-top:solid 1px #e5e5e5;
+	padding:1% 0;
+}
+div#deli02 table tr.lasttr td{
+	border-bottom:solid 1px #e5e5e5;
+}
+div#deli02 img{
+	width:15px;
+}
+div#deli02 tr td:last-child{
+	text-align:right;
+	padding-right:5%;
+}
+div#deli02 tr:hover{
+	background:#f6f4f3;
+}
+
+/*판매 질문*/
+tr#qna td{
+    display: none;
+}
+div#deli02 tr#qna:hover{
+	background:0;
+}
+div#deli02 tr#qna td:last-child{
+	padding-right:0;
+	text-align:left;
+}
+div#deli02 tr#qna div{
+	width:100%;
+}
+div#deli02 tr#qna div hr{
+	margin:10px 0;
+	border:dashed 1px #999;
+}
+div#deli02 tr#qna div p.qna_text{
+	width:50%;
+	margin:0 auto;
+}
+div#deli02 tr#qna div img{
+	width:100%;
+}
+div#deli02 tr#qna div div{
+	line-height:1.5;
+	padding:0 5%;
+	margin-top:20px;
+}
+div#deli02 tr#qna div p.qna_text2{
+	font-weight:bold;
+	font-size:1.2em;
+	color:#c51230;
+}
+div#deli02 tr#qna div p.qna_text2 img{
+	width:13px;
+}
+div#deli02 tr#qna div p.qna_text3{
+	margin:10px 0;
+	text-indent:5px;
+	line-height:1.6;
+}
+
+tr.qna01 td img{
+	cursor:pointer;
+}
+/*
+tr.qna01:hover ~ tr#qna td{
+	display:block;
+	width:500%;
+}
+tr#qna:hover> td{
+	display:block;
+	width:500%;
+}*/
+/*배송 교환 환불***************************/
+div#deli04{
+	width:50%;
+	margin:0 auto;
+	padding-top:90px;
+	font-size:1.1em;
+	line-height:1.4;
+}
+div#deli04 p strong{
+	font-size:2.25em;
+}
+div#deli04 table{
+	width:100%;
+	margin-top:10px;
+}
+div#deli04 th, div#deli04 td{
+	padding:20px 0;
+}
+div#deli04 table th, div#deli04 table td{
+	border-top:solid 1px #e5e5e5;
+}
+div#deli04 table th{
+	text-align:left;
+	padding-left:5%;
+}
+tr.deli04_1 th, tr.deli04_1 td{
+	border-bottom:solid 1px #e5e5e5;
+}
+div#deli04 li{
+	margin-bottom:4px;
+}
+
