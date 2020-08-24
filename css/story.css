@@ -1,0 +1,76 @@
+/* ---------- */
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+    background: rgba(255, 255, 255, 0.5);
+}
+.fp-controlArrow.fp-prev,
+.fp-controlArrow.fp-next{
+    border: solid 1px transparent;
+    width: 100px;
+    height: 50px;
+    background-size: cover;
+}
+.fp-controlArrow.fp-prev {
+    left: 5%;
+    background: url("../img/arrow_p.png") no-repeat center;
+}
+.fp-controlArrow.fp-next {
+    right: 5%;
+    background: url("../img/arrow.png") no-repeat center;
+}
+.fp-controlArrow.fp-prev:hover {
+    left: 5%;
+    background: url("../img/arrow_p2.png") no-repeat center;
+}
+.fp-controlArrow.fp-next:hover {
+    right: 5%;
+    background: url("../img/arrow2.png") no-repeat center;
+}
+
+
+
+
+.section{
+    background-size: cover !important;
+}
+/* 섹션 1 */
+#section01{
+    background-color: #000;
+}
+#section01 video{
+    width: 100%;
+    position: relative;
+    height: 100%;
+}
+.video-content{
+    position: absolute;
+    width: 40%;
+    height: 50%;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* 섹션 2 */
+#section02{
+    background: url('../img/brand01.jpg') center no-repeat;
+}
+/* 섹션 3 */
+#section03{
+    background: url('../img/brand02.jpg') center no-repeat;
+}
+
+/* 섹션 4 */
+#section04{
+    background: url('../img/brand03.jpg') center no-repeat;
+}
+#section04 h3{
+    color: #fff;
+    font-size: 2em;
+    text-align: center;
+    transform: translateX(-50);
+}
+/* 섹션 5 */
+#section05{
+    background: url('../img/brand04.jpg') center no-repeat;
+}

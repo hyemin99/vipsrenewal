@@ -1,0 +1,278 @@
+.snb-nav{
+	width: 24%;
+}
+.snb-nav > li{
+	width: 50%;
+}
+.notice{
+    margin-top: 50px;
+}
+/* ---- */
+#store{
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    border: solid 1px transparent;
+}
+
+
+
+div#vipsmania{
+	width:57.5%;
+	margin:0 auto;
+	padding-top:50px;
+}
+/*멤버십 혜택 시작*/
+div.mani01{
+	width:100%;
+	margin-top:30px;
+}
+div.mani01> h1{
+	font-size:3em;
+}
+div.mani01> h3{
+	margin-top:20px;
+}
+div.mani01> ul{
+	margin-top:15px;
+	overflow:hidden;
+}
+div.mani01> ul li{
+	float:left;
+	list-style:disc;
+	list-style-position:inside;
+	line-height:1.4;
+	margin-right:20px;
+}
+div.mani01> ul li> span{
+	color:#c2a279;
+	font-weight:700;
+	display:inline-block;
+	margin-right:15px;
+}
+/*하위 설명*/
+div.mani01_1{
+	width:100%;
+	margin:0 auto;
+	margin-top:10px;
+	overflow:hidden;
+	border-top:solid 3px #e5e5e5;
+	border-bottom:solid 3px #e5e5e5;
+	padding:2%;
+}
+div.mani01_1 div{
+	float:left;
+	width:50%;
+	overflow:hidden;
+	padding:0 3%;
+}
+div.mani01_1 div> p{
+	width:100%;
+	font-size:1.1em;
+}
+div.mani01_1 div> p> span{
+	font-size:2em;
+	color:#c2a279;
+	font-weight:700;
+	margin-right:20px; 
+}
+div.mani01_1> div> div{
+	width:100%;
+	overflow:hidden;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	margin-top:10px;
+}
+div.mani01_1 div p.tat{
+	float:left;
+	width:25%;
+}
+div.mani01_1 div p.tat img{
+	width:100%;
+}
+div.mani01_1 div ul{
+	float:left;
+	width:75%;
+	padding-left:20px;
+}
+div.mani01_1 div ul li{
+	font-size:0.9em;
+	list-style:disc;
+	list-style-position:inside;
+	line-height:1.5;
+}
+/*혜택 3단계*/
+div.mani01_1 div.wenday{
+	overflow:hidden;
+	width:100%;
+	padding:0;
+	margin-top:10px;
+}
+div.mani01_1 div.wenday> div{
+	float:left;
+	width:33.333%;
+	display:block;
+	border-right:dashed 2px #e5e5e5;
+	height:130px;
+	text-align:center;
+	line-height:1.4;
+}
+div.mani01_1 div.wenday> div:last-child{
+	border:0;
+}
+div.mani01_1 div.wenday> div> p{
+	margin:0 auto;
+	margin-top:20px;
+	margin-bottom:10px;
+	width:150px;
+	background:#a8a4a0;
+	border-radius:10px;
+	text-align:center;
+	color:#fff;
+	padding:3px 0;
+}
+/*버튼*/
+p.mabtn{
+	width:100%;
+	text-align:center;
+}
+p.mabtn> button{
+	background:#524a41;
+	border:0;
+	color:#fff;
+	cursor:pointer;
+	padding:5px 20px;
+	margin-top:15px;
+	transition-duration:0.8s;
+}
+p.mabtn> button:hover{
+	background:#c2a279;
+	transition-duration:0.8s;
+}
+
+/*카드 발급 방법*********************/
+div.mani03{
+	width:100%;
+	margin-top:70px;
+}
+div.mani03 ul li{
+	list-style-type:disc;
+	list-style-position:inside;
+	color:#c2a279;
+	margin-top:15px;
+	font-weight:700;
+}
+/*까만 카드*/
+div.mani03_1> p:first-child{
+	width:40%;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	text-align:left;
+	font-size:2em;
+	font-weight:800;
+	margin-top:30px;
+}
+div.mani03_1> p:last-child{
+	margin-top:15px;
+	line-height:1.4;
+	font-size:1.1em;
+}
+div.mani03_1> p:last-child span{
+	color:#c51230;
+}
+
+/*하위 카드 완성 스텝*****/
+div.mani03_2{
+	width:100%;
+	border:solid 1px #e5e5e5;
+	margin-top:20px;
+}
+div.mani03_2> div.maniacard{
+	width:100%;
+	overflow:hidden;
+	margin-top:30px;
+}
+div.mani03_2> div.maniacard h3{
+	margin-bottom:10px;
+}
+/*보유 회원*/
+div.mani03_2> div.maniacard> div.ma_ca{
+	float:left;
+	width:40%;
+	padding-left:40px;
+}
+div.mani03_2> div.maniacard> div.ma_ca> div{
+	overflow:hidden;
+	width:100%;
+}
+div.mani03_2> div.maniacard> div.ma_ca> div p{
+	float:left;
+}
+div.mani03_2> div.maniacard p.cardimg{
+	width:150px;
+	text-align:center;
+	line-height:1.4;
+}
+div.mani03_2> div.maniacard p.cardimg img{
+	border:solid 1px #e5e5e5;
+}
+div.mani03_2> div.maniacard p.gt{
+	width:50px;
+	height:100%;
+	font-size:2em;
+	height:100px;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+}
+/*미보유 회원*/
+div.mani03_2> div.maniacard> div.ma_ca2{
+	float:left;
+	width:60%;
+	padding-left:40px;
+	border-left:dashed 2px #e5e5e5;
+}
+div.mani03_2> div.maniacard> div.ma_ca2 div{
+	overflow:hidden;
+}
+div.mani03_2> div.maniacard> div.ma_ca2 p{
+	float:left;
+}
+div.mani03_2> div.maniacard2{
+	width:100%;
+	text-align:center;
+	background:#a8a4a0;
+	color:#fff;
+	font-size:1.2em;
+	line-height:1.4;
+	margin-top:30px;
+	padding:20px;
+}
+div.mani03_2> div.maniacard2> p{
+	margin-top:10px;
+}
+div.mani03_2> div.maniacard2> p button{
+	padding:5px 20px;
+	border:solid 1px #fff;
+	background:transparent;
+	color:#fff;
+}
+
+/*이용 약관*/
+div.conditions{
+	width:100%;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	color:#a8a4a0;
+	line-height:1.4;
+	margin:50px 0;
+}
+div.conditions ul li:first-child{
+	margin-top:20px;
+}
+div.conditions ul li{
+	margin-bottom:5px;
+}
