@@ -26,18 +26,25 @@
     right: 5%;
     background: url("../img/arrow2.png") no-repeat center;
 }
-
-
-
-
 .section{
     background-size: cover !important;
+    position: relative;
 }
+.section-content{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    color: #fff;
+    font-size: 0.55em;
+}
+
+
 /* 섹션 1 */
-#section01{
+.section01{
     background-color: #000;
 }
-#section01 video{
+.section01 video{
     width: 100%;
     position: relative;
     height: 100%;
@@ -49,28 +56,256 @@
     top: 50%; left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgba(0, 0, 0, 0.7);
+    padding: 5%;
+    color: #fff;
+    opacity: 0;
 }
-
-/* 섹션 2 */
-#section02{
-    background: url('../img/brand01.jpg') center no-repeat;
-}
-/* 섹션 3 */
-#section03{
-    background: url('../img/brand02.jpg') center no-repeat;
-}
-
-/* 섹션 4 */
-#section04{
-    background: url('../img/brand03.jpg') center no-repeat;
-}
-#section04 h3{
+.video-content h3{
     color: #fff;
     font-size: 2em;
+    opacity: 0;
+}
+.video-content p{
+    font-size: 1.1em;
+    line-height: 2;
+    margin-top: 30px;
+    opacity: 0;
+}
+.hr-box{
+    height: 40px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+.hr-box div{
+    width: 1px;
+    height: 40px;
+    margin: 0 auto;
+    background: #fff;
+    animation: hrline 3s ease;
+	animation-delay: 2s;
+	opacity: 0;
+	border-color: rgba(255, 255, 255, 0.5);
+}
+@keyframes hrline {
+    0% {
+        height: 0;
+    }
+    30% {
+        opacity: 1;
+        height: 40px;
+    }
+    100%{
+	    margin-top: 40px;
+    }
+}  
+/*--마우스 스크롤 애니--*/
+.scrollani{
+    width: 20px;
+    height: 40px;
+    margin: 50px auto;
+    border: solid 1px #fff;
+    border-radius: 20px;
     text-align: center;
-    transform: translateX(-50);
+    position: relative;
+    opacity: 0;
+}
+.scrollani span{
+    position: absolute;
+    left: 50%; top: -20px;
+    transform: translateX( -50%);
+}
+.scrollani .scroll-dot{
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    left: calc(50% - 3px);
+    top: 6px;
+	animation: scrollani 3s infinite;
+}
+@keyframes scrollani {
+    0% {
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    transform: translate(0, 20px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}  
+/* 섹션 2 */
+.section02{
+    background: url('../img/brand01.jpg') center no-repeat;
+}
+.sec-txt{
+    position: absolute;
+    width: 24%;
+    top: 36%; left: 14%;
+}
+.sec-tit{
+    font-size: 20px;
+    padding-bottom: 10px;
+    border-bottom: solid 1px #fff;
+}
+.sec-txt p{
+    margin-bottom: 26px;
+    line-height: 1.7;
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: 1.5s ease;
+}
+.section02.active .sec-txt p{
+    opacity: 1;
+    transform: translateX(0);
+}
+.section02.active .sec-txt p + p{
+    transition-delay: 0.6s;
+}
+.section02.active .sec-txt p + p + p{
+    transition-delay: 0.9s;
+}
+/* 섹션 3 */
+.section03{
+    background: url('../img/brand02.jpg') center no-repeat;
+}
+.slide-content{
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 5%;
+}
+p.slide-tit{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.slide-content p{
+    transform: translateY(-50px);
+    transition: 1s ease;
+    opacity: 0;
+    transition-delay: 0.3s;
+}
+.section03.active .slide-content p{
+    transform: translateY(0);
+    opacity: 1;
+}
+.slide-content p + p{
+    transition-delay: 0.5s;
+}
+.hover-cotainer{
+    overflow: hidden;
+    margin: 70px auto 0 auto;
+    width: 70%;
+}
+.hover-box{
+    float: left;
+    width: 47%;
+    margin-right: 6%;
+    overflow: hidden;
+    position: relative;
+    transform: translateY(-50px);
+    opacity: 0;
+    transition: 1s ease;
+    font-size: 12px;
+}
+.section03.active .hover-box{
+    transform: translateY(0);
+    opacity: 1;
+    transition-delay: 0.7s;
+}
+.section03.active .hover-box + .hover-box{
+    transform: translateY(0);
+    opacity: 1;
+    transition-delay: 0.9s;
+}
+.hover-box:last-child{
+    margin-right: 0;
+}
+.hover-box img{
+    transition: 0.5s ease-in-out;
+    vertical-align: bottom;
+}
+.hover-box:hover img{
+    transform: translateX(-50px);
+    filter: brightness(0.2);
+}
+.st_photo{
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    top: 55%; left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    line-height: 1.6;
+    transition: 1s ease;
+    opacity: 0;
+}
+.hover-box:hover .st_photo {
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+}
+.hover-tit{
+    font-size: 20px;
+    margin-bottom: 10px;
+    display: block;
+}
+.st-btn{
+    display: block;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    color: #999;
+    line-height: 50px;
+    font-size: 30px;
+    background-color: rgba(50, 50, 50, 0.8);
+    position: absolute;
+    bottom: 0; right: -50px;
+    transition: 1s ease;
+}
+.hover-box:hover .st-btn{
+    right: 0;
+}
+.st-btn:hover{
+    color: #fff;
+}
+/* 섹션 4 */
+.section04{
+    background: url('../img/brand03.jpg') center no-repeat;
+}
+.section04 .section-content{
+    background: rgba(0, 0, 0, 0.8);
+    transition: 1.5s ease;
+    transition-delay: 0.3s;
+}
+.section04.active .section-content{
+    background: rgba(0, 0, 0, 0);
+}
+.section04 .sec-txt{
+    left: 56%;
+    width: 26%;
+}
+.section04 .sec-txt p{
+    transform: translateX(50px);
+    transition: 2s ease-in-out;
+}
+.section04.active .sec-txt p{
+    opacity: 1;
+    transform: translateX(0);
+}
+.section04.active .sec-txt p + p{
+    transition-delay: 0.6s;
+}
+.section04.active .sec-txt p + p + p{
+    transition-delay: 0.9s;
 }
 /* 섹션 5 */
-#section05{
+.section05{
     background: url('../img/brand04.jpg') center no-repeat;
 }
