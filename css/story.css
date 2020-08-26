@@ -280,9 +280,9 @@ p.slide-tit{
     background: url('../img/brand03.jpg') center no-repeat;
 }
 .section04 .section-content{
-    background: rgba(0, 0, 0, 0.8);
-    transition: 1.5s ease;
-    transition-delay: 0.3s;
+    background: rgba(0, 0, 0, 0.9);
+    transition: 2s ease;
+    transition-delay: 0.5s;
 }
 .section04.active .section-content{
     background: rgba(0, 0, 0, 0);
@@ -293,7 +293,8 @@ p.slide-tit{
 }
 .section04 .sec-txt p{
     transform: translateX(50px);
-    transition: 2s ease-in-out;
+    transition: 2s ease;
+    opacity: 0;
 }
 .section04.active .sec-txt p{
     opacity: 1;
@@ -309,3 +310,68 @@ p.slide-tit{
 .section05{
     background: url('../img/brand04.jpg') center no-repeat;
 }
+.section05 .section-content{
+    text-align: center;
+}
+.brand-logo{
+    position: absolute;
+    top: 45%; left: 50%;
+    transform: translate(-50%, -50%);
+}
+.brand-logo img{
+    display: block;
+    width: 180px;
+    margin: 0 auto 40px auto;
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: 0.8s ease;
+    transition-delay: 0.3s;
+}
+.section05.active .brand-logo img{
+    opacity: 1;
+    transform: translateY(0);
+}
+.brand-logo p {
+    margin-bottom: 10px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 1s ease;
+    transition-delay: 0.7s;
+}
+.section05.active .brand-logo p{
+    opacity: 1;
+    transform: translateY(0);
+}
+.brand-logo p + p{
+    transition-delay: 0.9s;
+}
+.scroll-top{
+    position: absolute;
+    width: 100px;
+    bottom: 12%; left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+}
+.scroll-top div{
+    width: 20px;
+    height: 20px;
+    border-bottom: solid 2px #fff;
+    border-right: solid 2px #fff;
+    transform: rotate(45deg);
+    margin: 10px auto;
+    position: relative;
+	animation: sclltop 3s infinite;
+}
+@keyframes sclltop {
+    0% {
+    opacity: 0;
+    top: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+	top: 20px;
+  }
+}   
