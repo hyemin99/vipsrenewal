@@ -39,5 +39,14 @@ $(function(){
 	$('.hamburger').on('click',function(){
 		$(this).toggleClass('active');
 		$(this).find('div').removeClass('no-ani')
-	});
+    });
+    
+    $(window).on("scroll", function(){
+        var windowScroll = $(this).scrollTop();
+        
+        if (windowScroll >= 200) {
+			$(".fixed-content").removeClass("fix")
+							   .css("top","0");
+		} 
+    });
 });
