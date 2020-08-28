@@ -13,11 +13,13 @@
 	<link rel="stylesheet" type="text/css" href="./css/reset.css">
 	<link rel="stylesheet" type="text/css" href="./css/common.css">
 	<link rel="stylesheet" type="text/css" href="./lib/swiper/swiper.css">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	<link rel="stylesheet" type="text/css" href="./css/vips.css">
 
 	<script src="./js/jquery-3.5.1.min.js"></script>
 	<script src="./js/rolling.js"></script>
 	<script src="./lib/swiper/swiper.js"></script>
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 </head>
 <body>
 <div id="wrap">
@@ -209,7 +211,7 @@
 		<div id="best-menu">
 			<div class="best-menu-container">
 				<ul class="best-menu-left">
-					<ul class="best-menu-img-list">
+					<ul class="best-menu-img-list" data-aos="fade-right" data-aos-duration="1000">
 						<li class="best-menu-img on"><img src="./img/best-menu01.jpg" alt="베스트 메뉴 이미지 입니다"/></li>
 						<li class="best-menu-img"><img src="./img/best-menu02.jpg" alt="베스트 메뉴 이미지 입니다"/></li>
 						<li class="best-menu-img"><img src="./img/best-menu03.jpg" alt="베스트 메뉴 이미지 입니다"/></li>
@@ -220,7 +222,7 @@
 						<a href="#" class="view-more">VIEW MORE</a>
 					</li>
 				</ul>
-				<ul class="best-menu-right">
+				<ul class="best-menu-right" data-aos="fade-left" data-aos-duration="1000"  data-aos-delay="300">
 					<li class="kategorie-tit"><span>BEST</span> MENU</li>
 					<li class="best-menu-pagination"></li>
 					<ul class="best-menu-list swiper-wrapper">
