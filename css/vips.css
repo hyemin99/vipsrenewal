@@ -142,6 +142,7 @@
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3f4f6', endColorstr='#00000000',GradientType=1 ); /* IE6-9 */
 	position: relative;
 	border: solid 1px transparent;
+	overflow: hidden;
 }
 /* best-menu컨텐츠 */
 /* 베스트메뉴 높이값 */
@@ -189,7 +190,8 @@
 	border: solid 1px #8d847a;
 	color: #8d847a;
 }
-.view-more:hover{
+.view-more:hover,
+.tablet-btn:hover{
 	background-color: #8d847a;
 	color: #fff;
 }
@@ -230,6 +232,12 @@
 	padding: 10% 0  10% 20%;
 	margin-top: 50px;
 	color: #fff;
+}
+.tablet-img{
+	display: none;
+}
+.tablet-btn{
+	display: none;
 }
 .best-menu-kategorie{
 	display: inline-block;
@@ -285,6 +293,7 @@
 #enjoy-steak{
 	width: 100%;
 	margin-top: 70px;
+	overflow: hidden;
 }
 .enjoy-left{
 	float: left;
@@ -343,6 +352,7 @@
 	margin-top: -100px;
 	background-color: #2b2424;
 	padding: 8% 15% 4% 15%;
+	overflow: hidden;
 }
 .event-thumb{
 	float: left;
@@ -366,6 +376,7 @@
 	color: #fff;
 	margin: 2% 0;
 	padding-left: 10%;
+	overflow: hidden;
 }
 .event-txt{
 	margin: 40px 20px;
@@ -409,6 +420,11 @@
 	background-color: #fff;
 	padding: 15%;
 	text-align: center;
+	opacity: 0;
+	transition: 1s ease;
+}
+.store-content.on {
+	opacity: 1;
 }
 .store-tit{
 	font: 800 1.7em 'Nanum Gothic', sans-serif;
@@ -435,6 +451,13 @@
 	margin-left: 40%;
 	background: url("../img/store03.jpg") no-repeat top left;
 	background-size: contain;
+	opacity: 0;
+	transition: 1s ease;
+	z-index: 99;
+}
+.store-btn-wrap.on{
+	opacity: 1;
+	transition-delay: 0.9s;
 }
 .store-btn{
 	float: right;
@@ -459,12 +482,21 @@
 	width: 54%;
 	overflow: hidden;
 }
+.store-right img{
+	opacity: 0;
+	transition: 1s ease;
+}
+.store-right.on img{
+	opacity: 1;
+}
 .store-right > img:first-child{
 	width: 52%;
 	margin-right: 2%;
+	transition-delay: 0.3s;
 }
 .store-right > img:last-child{
 	width: 46%;
+	transition-delay: 0.5s;
 }
 /* 브랜드 */
 #brand{
@@ -861,7 +893,8 @@
 	font-size: 1.2em;
 }
 .news-date{
-	margin-top: 30px;
+	position: absolute;
+	bottom: 15%;
 	color: #aaa;
 }
 .news-arr{

@@ -41,7 +41,13 @@ $(function(){
 		$(this).find('div').removeClass('no-ani')
     });
     
-    AOS.init();
+    $(window).on('scroll', function(){
+        var windowHegiht = $(this).scrollTop()+750
+
+        if (windowHegiht > $('#store').offset().top) {
+            $('#store div').addClass('on');
+        }
+    });
     AOS.init({
         // Global settings:
         disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
@@ -57,7 +63,7 @@ $(function(){
         // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
         offset: 200, // offset (in px) from the original trigger point
         delay: 0, // values from 0 to 3000, with step 50ms
-        duration: 400, // values from 0 to 3000, with step 50ms
+        duration: 600, // values from 0 to 3000, with step 50ms
         easing: 'ease', // default easing for AOS animations
         once: true, // whether animation should happen only once - while scrolling down
         mirror: false, // whether elements should animate out while scrolling past them

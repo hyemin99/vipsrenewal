@@ -1,0 +1,274 @@
+@media screen and (max-width:1500px) {
+    .kategorie-tit{
+        font-size: 40px;
+    }
+    .nav-width{
+        width: 80%;
+    }
+    .banner-container{
+        width: 80%;
+    }
+    /* 메뉴 슬라이더 */
+    .best-menu-container{
+        width: 70%;
+    }
+    /* 비디오 */
+    #enjoy-steak{
+        margin-top: 50px;
+    }
+    .enjoy-left{
+        padding: 0 0 5% 10%;
+        height: 500px;
+    }
+    #event{
+        padding: 8% 10% 4% 10%;
+    }
+    #store{
+        height: 800px;
+    }
+    .store-container{
+        width: 80%;
+    }
+    .benefits-container{
+        width: 80%;
+    }
+    .news-container{
+        width: 80%;  
+    }
+    .news-txt{
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        word-wrap:break-word; 
+        line-height: 1.2em;
+        height: 3.6em;
+    }
+    .follow-container{
+        width: 80%;
+    }
+    /* 푸터 */
+    .footer-top ul{
+        width: 70%;
+    }
+    .footer-bottom{
+        width: 70%;
+    }
+}
+@media screen and (max-width:1200px){
+    .kategorie-tit{
+        font-size: 30px;
+    }
+    .nav-width{
+        width: 90%;
+    }
+    .nav-ico{
+        display: block;
+    }
+    .banner-container{
+        width: 90%;
+    }
+    /* 메뉴 슬라이더 */
+    .best-menu-container{
+        width: 80%;
+    }
+    .best-menu-prev{
+        left: 2.5%;
+    }
+    .best-menu-next{
+        right: 2.5%;
+    }
+    /* 비디오 */
+    #enjoy-steak{
+        margin-top: 50px;
+    }
+    .enjoy-left{
+        padding: 0 0 5% 5%;
+        height: 450px;
+    }
+    #event{
+        padding: 8% 5% 4% 5%;
+    }
+    #store{
+        height: 800px;
+    }
+    .store-container{
+        width: 90%;
+    }
+    .benefits-container{
+        width: 90%;
+    }
+    .news-container{
+        width: 90%;  
+    }
+    .news-txt{
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        word-wrap:break-word; 
+        line-height: 1.2em;
+        height: 3.6em;
+    }
+    .follow-container{
+        width: 90%;
+    }
+    /* 푸터 */
+    .footer-top ul{
+        width: 80%;
+    }
+    .footer-bottom{
+        width: 80%;
+    }
+}
+@media screen and (max-width:980px) {
+    .center-nav{
+        display: none;
+    }
+    .kategorie-tit{
+        font-size: 40px;
+    }
+    .best-menu-right .kategorie-tit{
+        margin-left: 0;
+        text-align: center;
+    }
+    /* --- */
+    .best-menu-container{
+        height: 550px;
+    }
+    .banner-tit{
+        font-size: 20px;
+    }
+    .best-menu-left{
+        display: none;
+    }
+    .best-menu-content{
+        overflow: hidden;
+        padding: 12% 5% 5% 8%;
+    }
+    .best-menu-kategorie{
+        position: absolute;
+        top: 20px;
+        left: 5%;
+    }
+    /* 디스플레이 블럭 요소 */
+    .tablet-img{
+        display: block;
+        float: left;
+        width: 30%;
+        min-width: 190px;
+    } 
+    .best-menu-right{
+        width: 100%;
+        top: 0;
+    }
+    .best-menu-box{
+        float: right;
+        width: 55%;
+        margin: 10px 0;
+        font-size: 1.1em;
+        line-height: 1.6;
+    }
+    .best-menu-box h2{
+        font-size: 20px;
+    }
+    .best-menu-box h4{
+        font-size: 15px;
+    }
+    .tablet-btn{
+        display: block;
+        width: 200px;
+        line-height: 36px;
+        text-align: center;
+        font-size: 12px;
+        letter-spacing: 2px;
+        border: solid 1px #8d847a;
+        color: #8d847a;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translatex(-50%);
+        transition: 0.5s ease-in-out;
+    }
+    .best-menu-prev{
+        left: 1.5%;
+    }
+    .best-menu-next{
+        right: 1.5%;
+    }
+    /* 빕스 비디오  */
+    #enjoy-steak{
+        margin-top: 50px;
+    }
+    .enjoy-left{
+        float: left;
+        padding: 0;
+        width: 100%;
+        height: 200px;
+    }
+    .enjoy-content{
+        text-align: center;
+    }
+    /* --- */
+    .enjoy-txt{
+        margin: 20px 0;
+    }
+    .enjoy-txt p{
+        display: none;
+    }
+    .go-youtube{
+        margin: 10px 0;
+    }
+    /* --- */
+    .enjoy-right{
+        width: 100%;
+    }
+    /* 이벤트 */
+    #event{
+        margin-top: 0;
+        padding: 0;
+        overflow: hidden;
+        padding: 12% 5% 0 5%;
+        position: relative;
+    }
+    .event-thumb{
+        width: 100%;
+        margin-top: 20px;
+    }
+    #event .kategorie-tit{
+        position: absolute;
+        top: 40px; left: 0;
+        width: 100%;
+        text-align: center;
+    }
+    .event-content{
+        width: 100%;
+        padding: 0;
+    }
+    .event-txt b,
+    .event-txt p{
+        display: none;
+    }
+    #event a.view-more{
+        margin: 0 auto;
+    }
+        
+} 
+@media screen and (max-width:768px) {
+    #wrap{
+        border: solid 10px red;
+    }
+}
+/* 모바일 사이즈ㄴ */
+@media screen and (max-width:480px) {
+    #wrap{
+        border: solid 10px blue;
+    }
+}
+@media screen and (max-width:480px) {
+    #wrap{
+        border: solid 10px green;
+    }
+}
