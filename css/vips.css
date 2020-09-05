@@ -136,9 +136,9 @@
 #best-menu{
 	width:100%;
 	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f3f4f6+60,000000+100&1+0,1+59,0+61 */
-	background: -moz-linear-gradient(left,  rgba(243,244,246,1) 0%, rgba(243,244,246,1) 60%, rgba(243,244,246,0) 60%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(left,  rgba(243,244,246,1) 0%,rgba(243,244,246,1) 60%,rgba(243,244,246,0) 60%, rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to right,  rgba(243,244,246,1) 0%,rgba(243,244,246,1) 60%,rgba(243,244,246,0) 60%, rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	background: -moz-linear-gradient(left, rgba(243,244,246,1) 0%, rgba(243,244,246,1) 60%, rgba(243,244,246,0) 60%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, rgba(243,244,246,1) 0%,rgba(243,244,246,1) 60%,rgba(243,244,246,0) 60%, rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, rgba(243,244,246,1) 0%,rgba(243,244,246,1) 60%,rgba(243,244,246,0) 60%, rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3f4f6', endColorstr='#00000000',GradientType=1 ); /* IE6-9 */
 	position: relative;
 	border: solid 1px transparent;
@@ -824,6 +824,9 @@
 }
 .gift-card .swiper-wrapper li img{
 	width: 100%;
+}
+.media-slide{
+	display: none;
 }
 .gift-card span{
 	display: inline-block;

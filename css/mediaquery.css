@@ -254,20 +254,129 @@
     #event a.view-more{
         margin: 0 auto;
     }
-        
+    /* 빕스 스토어 예약 */  
+    #store{
+        height: 500px;
+    }
+    .store-left{
+        float: left;
+        width: 100%;
+    }
+    .store-content{
+        float: left;
+        width: 50%;
+        padding: 10%;
+    }
+    .store-txt p{
+        margin-top: 20px;
+        color: #666;
+    }
+    .store-btn-wrap{
+        position: relative;
+        float: right;
+        width: 45%;
+        margin-top: 10%;
+        margin-left: 0;
+    }
+    .store-btn-wrap.on{
+        transition-delay: 0.3s;
+    }
+    .store-btn{
+        float: right;
+        width: 42%;
+    }
+    .store-right{
+        display: none;
+    }
+    /* 빕스 메타포 아이콘 */
+    .metaphor{
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 14px;
+        overflow: hidden;
+        text-align: center;
+    }
+    /* 빕스 혜택 */
+    .benefits-left{
+        display: none;
+    }
+    .benefits-right{
+        width: 95%;
+        margin: 0 auto;
+    }
+    .gift-card{
+        width: 90%;
+        margin: 0 auto;
+    }
+    /* 뉴스 타이틀 */
+    .news-list h2{
+        font-size: 1em;
+    }
 } 
 @media screen and (max-width:768px) {
-    #wrap{
-        border: solid 10px red;
+    .right-nav{
+        display: none;
+    }
+    .banner-tit{
+        font-size: 15px;
+    }
+    .banner-txt{
+        font-size: 14px;
+    }
+    .best-menu-box h2{
+        font-size: 18px;
+    }
+    .store-txt{
+        margin-top: 30px;
+    }
+    #follow{
+        margin-top: 0;
+    }
+    .follow-container{
+        width: 90%;
+    }
+    .follow-list{
+        width: 25%;
+    }
+    .follow-list:last-child{
+        display: none;
+    }
+    .footer-tit{
+        display: none;
+    }
+    .footer-left{
+        width: 100%;
+        text-align: center;
+    }
+    .footer-center{
+        display: none;
+    }
+    .footer-right{
+        display: none;
     }
 }
-/* 모바일 사이즈ㄴ */
+@media screen and (max-width:768px) and (min-width:480px) {
+    
+}
+/* 모바일 사이즈 */
 @media screen and (max-width:480px) {
-    #wrap{
-        border: solid 10px blue;
+    .right-nav{
+        display: none;
+    }
+    .nav-form{
+        display: none;
+    }
+    .rolling-content{
+        margin-left: 0px;
+    }
+    .full-slide{
+        display: none;
+    }
+    .media-slide{
+        display: block;
     }
 }
-@media screen and (max-width:480px) {
+@media screen and (max-width:320px) {
     #wrap{
         border: solid 10px green;
     }
