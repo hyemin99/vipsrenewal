@@ -364,8 +364,11 @@
 	width: 32%;
 	margin-right: 2%;
 }
+.media-event{
+	display: none;
+}
 .event-thumb > li:last-child{
-	margin: 0;
+	margin-right: 0;
 }
 .event-thumb > li img{
 	width: 100%;
@@ -875,7 +878,7 @@
 	position: relative;
 }
 .news-list:last-child{
-	margin: 0;
+	margin-right: 0;
 }
 /* --- */
 .news-tit svg{
