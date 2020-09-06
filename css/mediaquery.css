@@ -2,6 +2,9 @@
     .kategorie-tit{
         font-size: 40px;
     }
+    .gnb-menu{
+        width: 80%;
+    }
     .nav-width{
         width: 80%;
     }
@@ -59,6 +62,9 @@
 @media screen and (max-width:1200px){
     .kategorie-tit{
         font-size: 30px;
+    }
+    .gnb-menu{
+        width: 90%;
     }
     .nav-width{
         width: 90%;
@@ -582,6 +588,9 @@
         width: 100%;
     }
     /* 빕스 메타포 아이콘 */
+    .brand-txt{
+        font-size: 100%;
+    }
     .metaphor{
         width: 80%;
     }
