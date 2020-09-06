@@ -515,8 +515,12 @@
         height: 580px;
     }
     .best-menu-pagination{
-        top: 100px;
+        top: 80px;
         padding-right: 10%;
+    }
+    .best-menu-prev,
+    .best-menu-next{
+        display: none;
     }
     .best-menu-right{
         float: none;
