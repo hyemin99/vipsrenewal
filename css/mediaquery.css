@@ -355,8 +355,54 @@
         display: none;
     }
 }
+/* 컴퓨터 마지막 사이즈 */
 @media screen and (max-width:768px) and (min-width:480px) {
-    
+    .full-slide{
+        display: none;
+    }
+    .media-slide{
+        display: block;
+    }
+    .banner-txt{
+        font-size: 100%;
+    }
+    .best-menu-container{
+        height: 580px;
+    }
+    .best-menu-pagination{
+        top: 100px;
+        padding-right: 10%;
+    }
+    .best-menu-right{
+        float: none;
+        width: 80%;
+        left: 10%;
+    }
+    .best-menu-content{
+        margin-top: 20px;
+    }
+    .tablet-img{
+        float: none;
+        margin: 20px auto;
+    }
+    .best-menu-box{
+        float: none;
+        width: 100%;
+        margin: 10px 0;
+        font-size: 1.1em;
+        line-height: 1.6;
+        text-align: center;
+    }
+    .best-menu-box h2,
+    .best-menu-box h4{
+        margin: 0;
+    }
+    .menu-price{
+        margin-top: 10px;
+    }
+    .menu-txt{
+        display: none;
+    }
 }
 /* 모바일 사이즈 */
 @media screen and (max-width:480px) {
@@ -369,12 +415,8 @@
     .rolling-content{
         margin-left: 0px;
     }
-    .full-slide{
-        display: none;
-    }
-    .media-slide{
-        display: block;
-    }
+    
+   
 }
 @media screen and (max-width:320px) {
     #wrap{
