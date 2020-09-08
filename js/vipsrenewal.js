@@ -36,11 +36,28 @@ $(function(){
         });
       });
 	
-	$('.hamburger').on('click',function(){
+	$('#hamburger').on('click',function(){
 		$(this).toggleClass('active');
-		$(this).find('div').removeClass('no-ani')
+        $(this).find('div').removeClass('no-ani');
+        $('#sidemenu').toggleClass('active');
+
+        if($('#sidemenu').hasClass("active")){
+            $('.modal').stop().animate({'right' : '0'}, 800);
+            $('#wrap').on('scroll touchmove mousewheel', function(event) { 
+                event.preventDefault();     
+                event.stopPropagation();     
+                return false; 
+            });
+		}else{
+            $('.modal').stop().animate({'right' : '-100%'}, 500);
+            $('#wrap').off('scroll touchmove mousewheel');
+		}
     });
     
+    $('.side-submenu').click(function(){
+		$('.side-menu-list',this).slideToggle(500);
+     });
+     
     $(window).on('scroll', function(){
         var windowHegiht = $(this).scrollTop()+750
 
@@ -48,6 +65,7 @@ $(function(){
             $('#store div').addClass('on');
         }
     });
+
     AOS.init({
         // Global settings:
         disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function

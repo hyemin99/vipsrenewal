@@ -269,15 +269,150 @@ header{
 .gnb-menu-list > li:hover > a{
 	color: #c2a279;
 }
-/* hamburger 햄버거 버튼 */
+/*#hamburger 햄버거 버튼 */
+#sidemenu{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.7);
+	top: 0; right: 0;
+	opacity: 0;
+	z-index: 90;
+	opacity: 0;
+	transition: 0.5s linear;
+}
+#sidemenu.active{
+	opacity: 1;
+}
+/* 모달 modal 팝업 */
+.modal{
+	position: absolute;
+	width: 18%;
+	min-width: 320px;
+	height: 100vh;
+	top: 0; right: -100%;
+	background: #fff;
+}
+.side-header{
+	background: #34302f;
+}
+.side-top{
+	line-height: 30px;
+	text-align: right;
+	padding-right: 50px;
+}
+.side-top svg{
+	fill: rgba(255, 255, 255, 0.8);
+	transition: 0.5s ease;
+	margin-left: 8px;
+	cursor: pointer;
+}
+.side-top svg:hover{
+	fill: #fff;
+}
+.side-header::after{
+	content: "";
+	display: block;
+	width: 100%;
+	height: 40px;
+	background-color: #1d1917;
+}
+.side-icon{
+	width: 90%;
+	margin: 1% auto;
+	overflow: hidden;
+}
+.side-icon li{
+	float: left;
+	width: 33.333%;
+	text-align: center;
+	margin-top: 5%;
+}
+.side-icon li a{
+	transition: 0.5s ease;
+	font-weight: 700;
+}
+.side-icon li:hover a{
+	color: #c51230;
+}
+.side-icon li img{
+	display: block;
+	margin: 0 auto;
+	width: 60%;
+}
+/* 세부 메뉴 */
+.side-menu::before{
+	content: "";
+	display: block;
+	width: 40px;
+	height: 0.5rem;
+	border-radius: 10px;
+	background-color: #999;
+	margin: 8% auto 0 auto;
+}
+.side-menu{
+	text-align: left;
+	width: 100%;
+	margin: 1% auto;
+}
+.side-submenu{
+	margin-top: 6%;
+}
+.side-submenu > p{
+	width: 80%;
+	margin: 0 auto;
+	padding-bottom: 1%;
+	font-size: 14px;
+	font-weight: 600;
+	border-bottom: solid 1px #999;
+	color: #999;
+	cursor: pointer;
+	transition: 0.5s ease;
+}
+.side-submenu > p:hover{
+	border-bottom: solid 1px #000;
+	color: #000;
+}
+.side-menu-list{
+	display: none;
+	background-color: #eee;
+	padding: 0 10%;
+	overflow: hidden;
+}
+.side-menu-list li{
+	float: left;
+	width: 50%;
+	line-height: 2;
+}
+.side-btn{
+	margin: 8% auto 0 auto;
+	width: 80%;
+}
+.side-btn button{
+	width: 50%;
+	background: #333;
+	border: 0;
+	transition: 0.5s ease;
+}
+.side-btn button a{
+	display: block;
+	line-height: 2.5;
+	color: #fff;
+}
+.side-btn button:hover{
+	background-color: #8d847a;
+}
+.side-btn button:first-child{
+	border-right: solid 1px #fff;
+}
+/* 네브 아이콘 */
 .nav-ico{
 	float: right;
 	width: 40px;
 	height: 40px;
 	position: relative;
-	display: none;
 }
-.hamburger{
+#hamburger{
 	width: 100%;
 	position: absolute;
 	width: 24px;
@@ -285,14 +420,15 @@ header{
 	top: 12px;
 	right: 0;
 	cursor: pointer;
+	z-index: 999;
 }
-.hamburger > div{
+#hamburger > div{
     width: 100%;
     height: 3px;
 	background: #999;
 	transition: background-color 0.5s ease;
 }
-.hamburger:hover > div{
+#hamburger:hover > div{
 	background-color: #fff;
 }
 .line02{
@@ -301,22 +437,22 @@ header{
 .no-ani{
     animation: none !important;
 }
-.hamburger .line01{
+#hamburger .line01{
     animation: line01-ani-rev 0.7s ease-in-out
 }
-.hamburger .line02{
+#hamburger .line02{
     animation: line02-ani-rev 0.7s ease-in-out
 }
-.hamburger .line03{
+#hamburger .line03{
     animation: line03-ani-rev 0.7s ease-in-out
 }
-.hamburger.active .line01{
+#hamburger.active .line01{
     animation: line01-ani 0.7s ease-in-out forwards
 }
-.hamburger.active .line02{
+#hamburger.active .line02{
     animation: line02-ani 0.7s ease-in-out forwards
 }
-.hamburger.active .line03{
+#hamburger.active .line03{
     animation: line03-ani 0.7s ease-in-out forwards
 }
 @keyframes line01-ani{
