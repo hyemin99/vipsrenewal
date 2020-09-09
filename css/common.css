@@ -278,11 +278,12 @@ header{
 	top: 0; right: 0;
 	opacity: 0;
 	z-index: 90;
-	opacity: 0;
-	transition: 0.5s linear;
+	display: none;
 }
 #sidemenu.active{
 	opacity: 1;
+	display: block;
+	transition: 0.5s linear;
 }
 /* 모달 modal 팝업 */
 .modal{
@@ -384,6 +385,12 @@ header{
 	width: 50%;
 	line-height: 2;
 }
+.side-menu-list li a{
+	transition: 0.5s ease;
+}
+.side-menu-list li a:hover{
+	color: #c51230;
+}
 .side-btn{
 	margin: 8% auto 0 auto;
 	width: 80%;
@@ -421,6 +428,7 @@ header{
 	right: 0;
 	cursor: pointer;
 	z-index: 999;
+	display: none;
 }
 #hamburger > div{
     width: 100%;

@@ -130,6 +130,9 @@
     .center-nav{
         display: none;
     }
+    #hamburger{
+        display: block;
+    }
     .kategorie-tit{
         font-size: 40px;
     }
