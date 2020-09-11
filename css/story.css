@@ -277,7 +277,7 @@ p.slide-tit{
 }
 /* 섹션 4 */
 .section04{
-    background: url('../img/brand04.jpg') center no-repeat;
+    background: url('../img/brand03.jpg') center no-repeat;
 }
 .section04 .section-content{
     background: rgba(0, 0, 0, 0.9);
@@ -308,7 +308,7 @@ p.slide-tit{
 }
 /* 섹션 5 */
 .section05{
-    background: url('../img/brand04.jpg') center no-repeat;
+    background: url('../img/brand05.jpg') center no-repeat;
 }
 .section05 .section-content{
     text-align: center;
