@@ -158,7 +158,7 @@ h2.join-name{
     padding: 3px 10px;
 }
 /* 모달 버튼 */
-.modal-container{
+.join-modal-container{
     position: fixed;
     width: 100%;
     height: 100%;
@@ -167,13 +167,13 @@ h2.join-name{
     z-index: 9999;
     display: none;
 }
-.modal-back{
+.join-modal-back{
     position: relative;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
 }
-.modal{
+.join-modal{
     width: 28%;
     height: 70%;
     position: absolute;
@@ -183,17 +183,17 @@ h2.join-name{
     z-index: 999;
     padding: 70px 10px;
 }
-.modal-close{
+.join-modal-close{
     position: absolute;
     top: 40px; right: 40px;
     cursor: pointer;
     text-align: center;
 }
-.modal-close > svg{
+.join-modal-close > svg{
     fill: #999;
     transition: 0.5s ease;
 }
-.modal-close:hover > svg{
+.join-modal-close:hover > svg{
     fill: #000;
 }
 .check-list{
@@ -273,13 +273,13 @@ h2.join-name{
     line-height: 36px;
     vertical-align: top;
 }
-.modal button{
+.join-modal button{
     border: 0;
     background-color: #524a41;
     color: #fff;
     transition: 0.5s ease;
 }
-.modal button:hover{
+.join-modal button:hover{
     background-color: #8d847a;
 }
 .aut-btn{
