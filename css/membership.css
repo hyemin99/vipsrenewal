@@ -197,69 +197,42 @@ div.mani03_2> div.maniacard{
 div.mani03_2> div.maniacard h3{
 	margin-bottom:10px;
 }
-/*보유 회원*/
-div.mani03_2> div.maniacard> div.ma_ca{
-	float:left;
-	width:40%;
-	padding-left:40px;
+/* 보유 회원 */
+.maniacard{
+	overflow: hidden;
+	padding: 0 3%;
 }
-div.mani03_2> div.maniacard> div.ma_ca> div{
-	overflow:hidden;
-	width:100%;
+.ma_ca,
+.ma_ca2{
+	float: left;
 }
-div.mani03_2> div.maniacard> div.ma_ca> div p{
-	float:left;
+.ma_ca{
+	width: 40%;
 }
-div.mani03_2> div.maniacard p.cardimg{
-	width:150px;
-	text-align:center;
-	line-height:1.4;
+.ma_ca2{
+	width: 60%;
 }
-div.mani03_2> div.maniacard p.cardimg img{
-	border:solid 1px #e5e5e5;
+.card-flow{
+	overflow: hidden;
 }
-div.mani03_2> div.maniacard p.gt{
-	width:50px;
-	height:100%;
-	font-size:2em;
-	height:100px;
-	display:flex;
-	align-items:center;
-	justify-content:center;
+.card-flow > p{
+	float: left;
 }
-/*미보유 회원*/
-div.mani03_2> div.maniacard> div.ma_ca2{
-	float:left;
-	width:60%;
-	padding-left:40px;
-	border-left:dashed 2px #e5e5e5;
+.maniacard2{
+	background-color: #a8a4a0;
+	color: #fff;
+	text-align: center;
+	padding: 2%;
+	line-height: 1.6;
 }
-div.mani03_2> div.maniacard> div.ma_ca2 div{
-	overflow:hidden;
+.maniacard2 button{
+	display: block;
+	border: solid 1px #fff;
+	margin: 15px auto 0 auto;
+	background-color: transparent;
+	color: #fff;
 }
-div.mani03_2> div.maniacard> div.ma_ca2 p{
-	float:left;
-}
-div.mani03_2> div.maniacard2{
-	width:100%;
-	text-align:center;
-	background:#a8a4a0;
-	color:#fff;
-	font-size:1.2em;
-	line-height:1.4;
-	margin-top:30px;
-	padding:20px;
-}
-div.mani03_2> div.maniacard2> p{
-	margin-top:10px;
-}
-div.mani03_2> div.maniacard2> p button{
-	padding:5px 20px;
-	border:solid 1px #fff;
-	background:transparent;
-	color:#fff;
-}
-
+/* 미보유 회원 */
 /*이용 약관*/
 div.conditions{
 	width:100%;
