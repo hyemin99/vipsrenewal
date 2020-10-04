@@ -42,6 +42,7 @@ $(function(){
         $('#sidemenu').toggleClass('active');
 
         if($('#sidemenu').hasClass("active")){
+            $('#hamburger').css({'display' : 'block'});
             $('.modal').stop().animate({'right' : '0'}, 800);
             $('#wrap').on('scroll touchmove mousewheel', function(event) { 
                 event.preventDefault();     
