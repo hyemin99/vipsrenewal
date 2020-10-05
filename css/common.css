@@ -531,6 +531,12 @@ header{
         transform: translate3d(0, 0, 0) rotate(0deg);
     }
 } 
+.top-btn{
+	display: block;
+	position: fixed;
+	bottom: 2%;
+	right: 2%;
+}
 /* --------------- */
 .header-space{
 	width: 100%;

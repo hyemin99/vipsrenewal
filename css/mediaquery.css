@@ -320,6 +320,9 @@
     }
 } 
 @media screen and (max-width:768px) {
+    .top-btn{
+        display: none;
+    }
     .right-nav{
         display: none;
     }
