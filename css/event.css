@@ -220,20 +220,23 @@ div.evess_2 img{
 }
 div.evess_2> div> div.vdo{
     position: absolute;
-    bottom: 130px;
+    bottom: 9%;
     left: 50%; 
     transform: translateX(-50%);
     width: 86%;
-    height: 500px;
+    height: 30%;
 	text-align: center;
 }
 .vdo iframe{
     width: 100%;
     height: 100%;
 }
+.event-mo-img{
+    display: none;
+}
 div.evess_2> div> p{
 	position: absolute;
-	bottom: 90px;
+	bottom: 6%;
 	left: 0;
 	width: 100%;
 	text-align: center;
@@ -259,11 +262,11 @@ div.evess_3 img{
 	width: 100%;
 }
 div.evess_3> p.evsstext{
-	position: absolute;
-	top: 920px;
-	right: 400px;
+    position: absolute;
+    top: 52%;
+    left: 50%;
 	text-align: center;
-	width: 200px;
+    width: 200px;
 }
 div.evess_3> p.evsstext a{
 	display: block;
@@ -279,7 +282,7 @@ div.evess_3> p.evsstext a:hover{
 }
 div.evess_3> p.donors{
 	position: absolute;
-	bottom: 170px;
+	bottom: 8%;
 	left: calc(50% - 100px);
 	text-align: center;
 	width: 200px;
@@ -373,23 +376,55 @@ div.eve_3> table> caption{
         width: 90% !important;
     }
     .event-border{
-         padding: 0 !important;
+        padding: 0 !important;
     }
     .event-date{
         display: none;
     }
-    div.evess_3> p.evsstext{
-        top: 970px;
-        right: 400px;
-    }
-    div.evess_3> p.donors{
-        bottom: 150px;
-    }
 }
 @media screen and (max-width:1200px){
 }
-@media screen and (max-width:980px){}
+@media screen and (max-width:980px){
+    #event{
+        padding: 0;
+    }
+    .slide-content{
+        margin-top: 100px;
+    }
+    .event-content{
+        width: 100%;
+    }
+    .event-prev,
+    .event-next{
+        display: none;
+    }
+    .event-table-wrap{
+        width: 100%;
+    }
+    .event-table-wrap .kategorie-tit{
+        padding-left: 2%;
+        text-align: left !important;
+    }
+    .breadcrumb{
+        top: 20px;
+    }
+}
 @media screen and (max-width:768px){
+    .event-full-img{
+        display: none;
+    }
+    .event-mo-img{
+        display: block;
+    }
+    div.evess_2> div> div.vdo{
+        bottom: 8%;
+        width: 90%;
+        height: 24%;
+    }
+    div.evess_2> div> p{
+        bottom: 5%;
+        width: 100%;
+    }
 }
 @media screen and (max-width:768px) and (min-width:480px){}
 @media screen and (max-width:480px){}
